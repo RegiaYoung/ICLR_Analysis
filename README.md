@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-openreview.online-blue?style=for-the-badge&logo=globe&logoColor=white)
+![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-http://10.123.4.17:3000/-blue?style=for-the-badge&logo=globe&logoColor=white)
 ![Version](https://img.shields.io/badge/Version-1.0.0-green?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
@@ -14,7 +14,7 @@ A comprehensive platform for analyzing peer review data from the International C
 
 ## 🌐 Live Demo
 
-**Access**: [openreview.online](https://openreview.online)
+**Access**: [http://10.123.4.17:3000/](http://10.123.4.17:3000/)
 
 ## 📸 Feature Showcase
 
@@ -91,14 +91,12 @@ A comprehensive platform for analyzing peer review data from the International C
 
 - Node.js 18+ and npm/yarn
 - PostgreSQL database
-- Google OAuth credentials (optional)
-- GitHub OAuth credentials (optional)
 
 ## 🔧 Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/fox291/ICLR_Analysis.git
+   git clone https://github.com/RegiaYoung/ICLR_Analysis.git
    cd ICLR_Analysis
    ```
 
@@ -153,8 +151,6 @@ Open [http://localhost:3000](http://localhost:3000) to view the application.
 |----------|-------------|----------|
 | `DATABASE_URL` | PostgreSQL connection string | Yes |
 | `BETTER_AUTH_SECRET` | Secret key for authentication | Yes |
-| `GOOGLE_CLIENT_ID_*` | Google OAuth credentials | No |
-| `GITHUB_CLIENT_ID_*` | GitHub OAuth credentials | No |
 | `NEXT_PUBLIC_APP_URL` | Your app URL | No |
 
 ## 📊 Data Schema

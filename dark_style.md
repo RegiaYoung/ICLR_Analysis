@@ -1,5 +1,3 @@
-I want you to use the following Design System for the UI generation.
-
 Theme Name: Gilded Luxury
 Vibe & Description: Sophisticated dark mode with gold accents.
 
