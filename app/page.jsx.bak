@@ -1,0 +1,896 @@
+"use client";
+import { useEffect, useState, useMemo, useRef } from "react";
+import { signInWithGoogle, signInWithGitHub, useSession } from "../lib/auth-client";
+import UserProfile from "../components/UserProfile";
+import ProfilePage from "../components/ProfilePage";
+import PostList from "../components/PostList";
+import CreatePost from "../components/CreatePost";
+import PostDetail from "../components/PostDetail";
+import { trackNavigation, trackFilterChange, trackPageView, trackLanguageChange, trackThemeChange, trackAuth, trackButtonClick } from "../lib/tracking";
+import VersionHistory from "../components/VersionHistory";
+
+const fmt = (n, digits = 1) => (n === null || n === undefined ? "—" : Number(n).toFixed(digits));
+const fmtInt = (n) => (n === null || n === undefined ? "—" : Number(n).toLocaleString("en-US"));
+
+export default function Home() {
+  const { data: session, isPending } = useSession();
+  const [lang, setLang] = useState("en");
+  const [themeLight, setThemeLight] = useState(true);
+  const [activeDim, setActiveDim] = useState("strict");
+  const [aggregate, setAggregate] = useState(null);
+  const [topLists, setTopLists] = useState(null);
+  const [user, setUser] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchResults, setSearchResults] = useState(null);
+  const [searchError, setSearchError] = useState("");
+  const [searchLoading, setSearchLoading] = useState(false);
+  const [showProfile, setShowProfile] = useState(false);
+  const [minReviews, setMinReviews] = useState(3);
+  const [showVersionHistory, setShowVersionHistory] = useState(false);
+  const [showAuthDropdown, setShowAuthDropdown] = useState(false);
+  const [dataLoading, setDataLoading] = useState(true);
+  const [authLoading, setAuthLoading] = useState(null); // 'google', 'github', or null
+  
+  // Community states
+  const [posts, setPosts] = useState([]);
+  const [postsLoading, setPostsLoading] = useState(true);
+  const [selectedPost, setSelectedPost] = useState(null);
+  const [showCreatePost, setShowCreatePost] = useState(false);
+  const [sortBy, setSortBy] = useState("recent"); // "recent", "comments", "likes"
+  
+  // Pagination states
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(10);
+  
+  const authDropdownTimeoutRef = useRef(null);
+
+  const t = useMemo(() => {
+    const en = {
+      lang_toggle: "EN / 中",
+      theme_light_label: "Light mode",
+      theme_dark_label: "Dark mode",
+      nav_overview: "Overview",
+      nav_lenient: "Most lenient",
+      nav_strict: "Most strict",
+      nav_volatile: "Most volatile",
+      nav_steady: "Most stable",
+      nav_wordy: "Longest texts",
+      nav_questions: "Most questions",
+      nav_disputed: "Most disputed papers",
+      nav_consensus: "Most consistent papers",
+      nav_ethics: "Ethics flags",
+      nav_authors: "Frequent authors",
+      nav_search: "Search submission",
+    };
+    const zh = {
+      lang_toggle: "中 / EN",
+      theme_light_label: "明亮模式",
+      theme_dark_label: "暗黑模式",
+      nav_overview: "概览",
+      nav_lenient: "最宽松",
+      nav_strict: "最严格",
+      nav_volatile: "最易变",
+      nav_steady: "最稳定",
+      nav_wordy: "最长文本",
+      nav_questions: "最多问题",
+      nav_disputed: "最具争议论文",
+      nav_consensus: "最一致论文",
+      nav_ethics: "伦理标记",
+      nav_authors: "常见作者",
+      nav_search: "搜索提交",
+    };
+    const translations = lang === "zh" ? zh : en;
+    return (key) => translations[key] || key;
+  }, [lang]);
+
+  useEffect(() => {
+    if (themeLight) document.body.classList.add("light");
+    else document.body.classList.remove("light");
+  }, [themeLight]);
+
+  useEffect(() => {
+    Promise.all([
+      fetch(`/api/stats?minReviews=${minReviews}`)
+        .then((res) => res.json())
+        .then((data) => {
+          setAggregate(data.aggregate);
+          setTopLists(data.top_lists);
+        })
+        .catch((err) => console.error("Stats API error:", err)),
+      
+      fetch("/api/session")
+        .then((res) => res.json())
+        .then((data) => setUser(data.user))
+        .catch(() => {})
+    ]).finally(() => {
+      setDataLoading(false);
+    });
+  }, [minReviews]);
+
+  // Preload community data
+  const fetchPosts = async () => {
+    try {
+      const response = await fetch("/api/posts");
+      const data = await response.json();
+      if (response.ok) {
+        setPosts(data.posts); // Store original unsorted data
+      }
+    } catch (error) {
+      console.error("Error fetching posts:", error);
+    } finally {
+      setPostsLoading(false);
+    }
+  };
+
+  // Sort posts locally for better performance
+  const sortedPosts = useMemo(() => {
+    if (!posts.length) return [];
+    
+    const sorted = [...posts];
+    switch (sortBy) {
+      case "comments":
+        return sorted.sort((a, b) => (b.comment_count || 0) - (a.comment_count || 0));
+      case "likes":
+        return sorted.sort((a, b) => (b.like_count || 0) - (a.like_count || 0));
+      case "recent":
+      default:
+        return sorted.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+    }
+  }, [posts, sortBy]);
+
+  // Pagination logic
+  const totalPosts = sortedPosts.length;
+  const totalPages = Math.ceil(totalPosts / postsPerPage);
+  const startIndex = (currentPage - 1) * postsPerPage;
+  const endIndex = startIndex + postsPerPage;
+  const currentPosts = sortedPosts.slice(startIndex, endIndex);
+
+  // Reset to first page when sort changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [sortBy]);
+
+  // Reset to first page when posts per page changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [postsPerPage]);
+  useEffect(() => {
+    fetchPosts();
+  }, []);
+
+  const handleAuthDropdownEnter = () => {
+    if (authDropdownTimeoutRef.current) {
+      clearTimeout(authDropdownTimeoutRef.current);
+      authDropdownTimeoutRef.current = null;
+    }
+    setShowAuthDropdown(true);
+  };
+
+  const handleAuthDropdownLeave = () => {
+    authDropdownTimeoutRef.current = setTimeout(() => {
+      setShowAuthDropdown(false);
+    }, 150); // Small delay to allow moving to menu
+  };
+
+  const handleGoogleLogin = async () => {
+    setAuthLoading('google');
+    trackAuth('login_attempt', 'google');
+    try {
+      await signInWithGoogle();
+    } catch (error) {
+      console.error('Google login error:', error);
+      setAuthLoading(null);
+    }
+  };
+
+  const handleGitHubLogin = async () => {
+    setAuthLoading('github');
+    trackAuth('login_attempt', 'github');
+    try {
+      await signInWithGitHub();
+    } catch (error) {
+      console.error('GitHub login error:', error);
+      setAuthLoading(null);
+    }
+  };
+
+  // Community handlers
+  const handlePostCreated = (newPost) => {
+    setPosts([newPost, ...posts]);
+    setShowCreatePost(false);
+    trackButtonClick('post_created', newPost.title);
+  };
+
+  const handlePostClick = (post) => {
+    setSelectedPost(post);
+    setActiveDim("community");
+    trackButtonClick('post_view', post.id.toString());
+  };
+
+  const handleBackToList = () => {
+    setSelectedPost(null);
+    fetchPosts(); // Refresh posts to get updated comment counts
+  };
+
+  const doSearch = async () => {
+    setSearchError("");
+    setSearchResults(null);
+    if (!user) {
+      setSearchError("Login required to search");
+      return;
+    }
+    if (!searchTerm) {
+      setSearchError("Enter submission number");
+      return;
+    }
+    setSearchLoading(true);
+    // Track search attempt
+    trackButtonClick('search_submit', searchTerm);
+    
+    try {
+      const res = await fetch(`/api/search?submission=${encodeURIComponent(searchTerm)}`);
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Search failed");
+      setSearchResults(data);
+      // Track successful search
+      trackButtonClick('search_success', searchTerm);
+    } catch (err) {
+      setSearchError(err.message);
+      // Track failed search
+      trackButtonClick('search_error', searchTerm);
+    } finally {
+      setSearchLoading(false);
+    }
+  };
+
+  // Only show auth loading overlay when user is actively logging in
+  if (authLoading) {
+    return (
+      <div className="loading-screen auth-loading">
+        <div className="loading-content">
+          <div className="loading-spinner"></div>
+          <h2>
+            {authLoading === 'google' ? 
+              (lang === 'zh' ? '正在通过Google登录...' : 'Signing in with Google...') :
+              (lang === 'zh' ? '正在通过GitHub登录...' : 'Signing in with GitHub...')
+            }
+          </h2>
+          <p>{lang === 'zh' ? '请稍候，正在重定向到登录页面' : 'Please wait, redirecting to login page'}</p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <>
+      <div className="topbar">
+        <div className="topbar-left">
+          <button className="toggle-btn" onClick={() => setActiveDim("search")}>
+            Search
+          </button>
+          <button className="toggle-btn" onClick={() => setActiveDim("community")}>
+            Community
+          </button>
+          <button className="toggle-btn" onClick={() => setShowVersionHistory(true)}>
+            {lang === 'zh' ? '版本历史' : 'Version History'}
+          </button>
+        </div>
+        <div className="topbar-right">
+          <button className="toggle-btn" onClick={() => {
+            const newLang = lang === "zh" ? "en" : "zh";
+            trackLanguageChange(newLang, lang);
+            setLang(newLang);
+          }}>
+            {t("lang_toggle")}
+          </button>
+          <button className="toggle-btn" onClick={() => {
+            const newTheme = !themeLight;
+            trackThemeChange(newTheme ? 'light' : 'dark', themeLight ? 'light' : 'dark');
+            setThemeLight(newTheme);
+          }}>
+            {themeLight ? t("theme_dark_label") : t("theme_light_label")}
+          </button>
+          {!session && (
+            <div 
+              className="auth-dropdown"
+              onMouseEnter={handleAuthDropdownEnter}
+              onMouseLeave={handleAuthDropdownLeave}
+            >
+              <button className="toggle-btn auth-trigger" disabled={isPending}>
+                {isPending ? 
+                  (lang === 'zh' ? '验证中...' : 'Checking...') :
+                  (lang === 'zh' ? '登录' : 'Sign In')
+                }
+                {isPending ? (
+                  <div className="auth-loading-spinner small"></div>
+                ) : (
+                  <svg className={`dropdown-arrow ${showAuthDropdown ? 'open' : ''}`} width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor">
+                    <path d="M3 4.5l3 3 3-3" strokeWidth="1.5" strokeLinecap="round"/>
+                  </svg>
+                )}
+              </button>
+              {!isPending && (
+                <div 
+                  className={`auth-dropdown-menu ${showAuthDropdown ? 'show' : ''}`}
+                  onMouseEnter={handleAuthDropdownEnter}
+                  onMouseLeave={handleAuthDropdownLeave}
+                >
+                <button 
+                  className="auth-option" 
+                  onClick={handleGoogleLogin}
+                  disabled={authLoading === 'google'}
+                >
+                  {authLoading === 'google' ? (
+                    <div className="auth-loading-spinner"></div>
+                  ) : (
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                      <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                      <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                      <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                    </svg>
+                  )}
+                  {authLoading === 'google' ? 
+                    (lang === 'zh' ? '正在登录...' : 'Signing in...') :
+                    (lang === 'zh' ? 'Google 登录' : 'Sign in with Google')
+                  }
+                </button>
+                <button 
+                  className="auth-option" 
+                  onClick={handleGitHubLogin}
+                  disabled={authLoading === 'github'}
+                >
+                  {authLoading === 'github' ? (
+                    <div className="auth-loading-spinner"></div>
+                  ) : (
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                  )}
+                  {authLoading === 'github' ? 
+                    (lang === 'zh' ? '正在登录...' : 'Signing in...') :
+                    (lang === 'zh' ? 'GitHub 登录' : 'Sign in with GitHub')
+                  }
+                </button>
+                </div>
+              )}
+            </div>
+          )}
+          {session?.user && <UserProfile user={session.user} onShowProfile={() => setShowProfile(true)} />}
+        </div>
+      </div>
+      <header className="hero">
+        <div className="hero-text">
+          <div className="eyebrow">ICLR Review Radar</div>
+          <h1>Review data: strict, lenient, and contested</h1>
+          <p className="lede">
+            Stats from review JSON: scores, confidence, text signals, and contention. Unauthenticated users see public
+            rankings; search needs login.
+          </p>
+          <button
+            className="toggle-btn"
+            style={{ fontSize: 14, padding: "10px 16px", borderRadius: 999, marginTop: 8 }}
+            onClick={() => setActiveDim("search")}
+          >
+            Search submission / reviewer
+          </button>
+        </div>
+      </header>
+
+      <div className="nav">
+        {[
+          ["overview", t("nav_overview")],
+          ["lenient", t("nav_lenient")],
+          ["strict", t("nav_strict")],
+          ["volatile", t("nav_volatile")],
+          ["steady", t("nav_steady")],
+          ["wordy", t("nav_wordy")],
+          ["questions", t("nav_questions")],
+          ["disputed", t("nav_disputed")],
+          ["consensus", t("nav_consensus")],
+          ["ethics", t("nav_ethics")],
+          ["authors", t("nav_authors")],
+          ["community", "Community"],
+          ["search", t("nav_search")],
+        ].map(([key, label]) => (
+          <button 
+            key={key} 
+            className={`nav-btn ${activeDim === key ? "active" : ""}`} 
+            onClick={() => {
+              trackNavigation(key, activeDim);
+              setActiveDim(key);
+            }}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
+
+      <main>
+        <section className={`dim-section ${activeDim === "overview" ? "active" : ""}`} data-dim="overview">
+          <div className="grid-4">
+            <div className="card">
+              <div className="section-title">Submissions</div>
+              <div className="stat">
+                <div className={`value ${dataLoading ? 'loading' : ''}`}>
+                  {dataLoading ? '—' : fmtInt(aggregate?.submission_count)}
+                </div>
+                <div className="hint">
+                  Reviews: {dataLoading ? '—' : fmtInt(aggregate?.review_count)} · Reviewers: {dataLoading ? '—' : fmtInt(aggregate?.reviewer_count)}
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="section-title">Avg rating</div>
+              <div className="stat">
+                <div className="value">{fmt(aggregate?.ratings?.mean, 2)}</div>
+                <div className="hint">
+                  Min / Max: {fmt(aggregate?.ratings?.min, 0)} - {fmt(aggregate?.ratings?.max, 0)}
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="section-title">Avg confidence</div>
+              <div className="stat">
+                <div className="value">{fmt(aggregate?.confidence?.mean, 2)}</div>
+                <div className="hint">Rating/Conf corr: {fmt(aggregate?.rating_confidence_correlation, 3)}</div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="section-title">Coverage</div>
+              <div className="stat">
+                <div className="value">{fmtInt(aggregate?.submissions_with_reviews)}</div>
+                <div className="hint">
+                  No reviews: {fmtInt((aggregate?.submission_count || 0) - (aggregate?.submissions_with_reviews || 0))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {[
+          ["lenient", "lenient_reviewers"],
+          ["strict", "strict_reviewers"],
+          ["volatile", "volatile_reviewers"],
+          ["steady", "steady_reviewers"],
+          ["wordy", "wordiest_reviewers"],
+          ["questions", "question_heavy_reviewers"],
+        ].map(([key, field]) => (
+          <section key={key} className={`dim-section ${activeDim === key ? "active" : ""}`} data-dim={key}>
+            <div className="section-header">
+              <div className="section-header-left">
+                <div className="section-title">{t(`nav_${key}`)}</div>
+                <div className="section-controls">
+                  <span className="control-label">
+                    {lang === "zh" ? "最少审稿:" : "Min reviews:"}
+                  </span>
+                  <select 
+                    value={minReviews} 
+                    onChange={(e) => setMinReviews(parseInt(e.target.value))}
+                    className="control-select"
+                  >
+                    <option value={1}>1</option>
+                    <option value={2}>2</option>
+                    <option value={3}>3</option>
+                    <option value={5}>5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div className="panel">
+              <div className="list-scroll">
+                {topLists?.[field] ? (
+                  <table className="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Reviewer</th>
+                        <th>Avg rating</th>
+                        <th>Reviews</th>
+                        <th>Std</th>
+                        <th>Conf</th>
+                        <th>Min/Max</th>
+                        <th>Text</th>
+                        <th>Questions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {topLists[field].map((r, idx) => (
+                        <tr key={idx}>
+                          <td>{idx + 1}</td>
+                          <td>
+                            <a href={`https://openreview.net/profile?id=${encodeURIComponent(r.reviewer_id)}`} target="_blank" rel="noreferrer">
+                              {r.reviewer_id}
+                            </a>
+                          </td>
+                          <td>{fmt(r.avg_rating, 2)}</td>
+                          <td>{fmtInt(r.reviews)}</td>
+                          <td>{fmt(r.rating_std, 2)}</td>
+                          <td>{fmt(r.avg_confidence, 2)}</td>
+                          <td>
+                            {fmt(r.min_rating, 0)} / {fmt(r.max_rating, 0)}
+                          </td>
+                          <td>{fmt(r.avg_text_words, 0)}</td>
+                          <td>{fmt(r.avg_questions_words, 0)}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                ) : (
+                  "No data"
+                )}
+              </div>
+            </div>
+          </section>
+        ))}
+
+        {[
+          ["disputed", "disputed_submissions"],
+          ["consensus", "consensus_submissions"],
+        ].map(([key, field]) => (
+          <section key={key} className={`dim-section ${activeDim === key ? "active" : ""}`} data-dim={key}>
+            <div className="section-header">
+              <div className="section-title">{t(`nav_${key}`)}</div>
+            </div>
+            <div className="panel">
+              <div className="list-scroll">
+                {topLists?.[field] ? (
+                  <table className="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Submission</th>
+                        <th>Reviews</th>
+                        <th>Avg rating</th>
+                        <th>Std</th>
+                        <th>Range</th>
+                        <th>Conf</th>
+                        <th>Ethics</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {topLists[field].map((s, idx) => (
+                        <tr key={idx}>
+                          <td>{idx + 1}</td>
+                          <td className="wide">
+                            {s.submission_number} · {s.submission_id}
+                          </td>
+                          <td>{fmtInt(s.review_count)}</td>
+                          <td>{fmt(s.avg_rating, 2)}</td>
+                          <td>{fmt(s.rating_std, 2)}</td>
+                          <td>{fmt(s.rating_range, 2)}</td>
+                          <td>{fmt(s.avg_confidence, 2)}</td>
+                          <td>{fmtInt(s.ethics_flags)}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                ) : (
+                  "No data"
+                )}
+              </div>
+            </div>
+          </section>
+        ))}
+
+        <section className={`dim-section ${activeDim === "ethics" ? "active" : ""}`} data-dim="ethics">
+          <div className="section-header">
+            <div className="section-title">{t("nav_ethics")}</div>
+          </div>
+          <div className="panel">
+            <div className="list-scroll">
+              {topLists?.ethics_flagged_submissions ? (
+                <table className="table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Submission</th>
+                      <th>Reviews</th>
+                      <th>Avg rating</th>
+                      <th>Std</th>
+                      <th>Ethics flags</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {topLists.ethics_flagged_submissions.map((s, idx) => (
+                      <tr key={idx}>
+                        <td>{idx + 1}</td>
+                        <td className="wide">
+                          {s.submission_number} · {s.submission_id}
+                        </td>
+                        <td>{fmtInt(s.review_count)}</td>
+                        <td>{fmt(s.avg_rating, 2)}</td>
+                        <td>{fmt(s.rating_std, 2)}</td>
+                        <td>{fmtInt(s.ethics_flags)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              ) : (
+                "No data"
+              )}
+            </div>
+          </div>
+        </section>
+
+        <section className={`dim-section ${activeDim === "authors" ? "active" : ""}`} data-dim="authors">
+          <div className="section-header">
+            <div className="section-title">{t("nav_authors")}</div>
+          </div>
+          <div className="panel">
+            <div className="list-scroll">
+              {topLists?.repeat_authors ? (
+                <table className="table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Author</th>
+                      <th>Appearances</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {topLists.repeat_authors.map((a, idx) => (
+                      <tr key={idx}>
+                        <td>{idx + 1}</td>
+                        <td>
+                          <a
+                            href={`https://openreview.net/profile?id=${encodeURIComponent(a.author_id)}`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {a.author_id}
+                          </a>
+                        </td>
+                        <td>{fmtInt(a.submissions)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              ) : (
+                "No data"
+              )}
+            </div>
+          </div>
+        </section>
+
+        <section className={`dim-section ${activeDim === "search" ? "active" : ""}`} data-dim="search">
+          <div className="section-header">
+            <div className="section-title">Search submission / reviewer</div>
+          </div>
+          <div className="panel">
+            <div className="auth-grid">
+              <div className="field">
+                <label>Submission Number</label>
+                <input
+                  id="search-input"
+                  type="text"
+                  placeholder="e.g., 1234"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                />
+              </div>
+              <div className="buttons">
+                <button onClick={doSearch} disabled={searchLoading}>
+                  {searchLoading ? "Searching..." : "Search"}
+                </button>
+              </div>
+              <div className="mini">{searchError}</div>
+            </div>
+            {searchResults && (
+              <div className="panel" style={{ marginTop: 12 }}>
+                <div className="section-title">
+                  Submission {searchResults.submission_number} · {searchResults.submission_id}
+                </div>
+                <table className="table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Reviewer</th>
+                      <th>Rating</th>
+                      <th>Confidence</th>
+                      <th>Summary</th>
+                      <th>Strengths</th>
+                      <th>Weaknesses</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {searchResults.reviews.map((r, idx) => (
+                      <tr key={idx}>
+                        <td>{idx + 1}</td>
+                        <td>
+                          <a href={r.reviewer_profile_url || "#"} target="_blank" rel="noreferrer">
+                            {r.reviewer_name || r.reviewer_id}
+                          </a>
+                        </td>
+                        <td>{fmt(r.rating, 2)}</td>
+                        <td>{fmt(r.confidence, 2)}</td>
+                        <td className="wide">{r.summary}</td>
+                        <td className="wide">{r.strengths}</td>
+              <td className="wide">{r.weaknesses}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+              </div>
+            )}
+            {!user && <div className="mini">Login required to search.</div>}
+          </div>
+        </section>
+
+        {/* Community Section */}
+        <section className={`dim-section ${activeDim === "community" ? "active" : ""}`} data-dim="community">
+          <div className="section-header">
+            <div className="section-header-left">
+              <div className="section-title">Community</div>
+              {session?.user && !selectedPost && (
+                <button 
+                  className="toggle-btn section-btn"
+                  onClick={() => {
+                    const action = showCreatePost ? 'cancel_post' : 'new_post';
+                    trackButtonClick(action, 'create_post_toggle');
+                    setShowCreatePost(!showCreatePost);
+                  }}
+                >
+                  {showCreatePost ? "Cancel" : "New Post"}
+                </button>
+              )}
+            </div>
+            <div className="section-header-right">
+              {!selectedPost && (
+                <>
+                  <div className="sort-controls">
+                    <span className="sort-label">Per page:</span>
+                    <select
+                      value={postsPerPage}
+                      onChange={(e) => setPostsPerPage(Number(e.target.value))}
+                      className="sort-select"
+                    >
+                      <option value={5}>5</option>
+                      <option value={10}>10</option>
+                      <option value={20}>20</option>
+                      <option value={50}>50</option>
+                    </select>
+                  </div>
+                  <div className="sort-controls">
+                    <span className="sort-label">Sort by:</span>
+                    <select
+                      value={sortBy}
+                      onChange={(e) => setSortBy(e.target.value)}
+                      className="sort-select"
+                    >
+                      <option value="recent">Most Recent</option>
+                      <option value="comments">Most Comments</option>
+                      <option value="likes">Most Liked</option>
+                    </select>
+                  </div>
+                </>
+              )}
+            </div>
+          </div>
+          
+          <div className="panel">
+            {!session && !isPending && (
+              <div style={{ textAlign: "center", padding: "40px" }}>
+                <p>Please log in to participate in community discussions.</p>
+              </div>
+            )}
+
+            {selectedPost ? (
+              <PostDetail 
+                post={selectedPost} 
+                onBack={handleBackToList}
+              />
+            ) : (
+              <>
+                {showCreatePost && session?.user && (
+                  <CreatePost 
+                    onPostCreated={handlePostCreated}
+                    onCancel={() => setShowCreatePost(false)}
+                  />
+                )}
+                
+                {postsLoading ? (
+                  <div style={{ textAlign: "center", padding: "40px" }}>
+                    <div className="loading-spinner"></div>
+                    <p>Loading posts...</p>
+                  </div>
+                ) : (
+                  <>
+                    <PostList 
+                      posts={currentPosts} 
+                      onPostClick={handlePostClick}
+                    />
+                    
+                    {/* Pagination */}
+                    {totalPages > 1 && (
+                      <div className="pagination-container">
+                        <div className="pagination-info">
+                          Showing {startIndex + 1}-{Math.min(endIndex, totalPosts)} of {totalPosts} posts
+                        </div>
+                        
+                        <div className="pagination-controls">
+                          <button 
+                            className="pagination-btn"
+                            onClick={() => setCurrentPage(1)}
+                            disabled={currentPage === 1}
+                          >
+                            First
+                          </button>
+                          
+                          <button 
+                            className="pagination-btn"
+                            onClick={() => setCurrentPage(currentPage - 1)}
+                            disabled={currentPage === 1}
+                          >
+                            Previous
+                          </button>
+                          
+                          <div className="pagination-numbers">
+                            {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
+                              let pageNum;
+                              if (totalPages <= 5) {
+                                pageNum = i + 1;
+                              } else if (currentPage <= 3) {
+                                pageNum = i + 1;
+                              } else if (currentPage >= totalPages - 2) {
+                                pageNum = totalPages - 4 + i;
+                              } else {
+                                pageNum = currentPage - 2 + i;
+                              }
+                              
+                              return (
+                                <button
+                                  key={pageNum}
+                                  className={`pagination-btn ${currentPage === pageNum ? 'active' : ''}`}
+                                  onClick={() => setCurrentPage(pageNum)}
+                                >
+                                  {pageNum}
+                                </button>
+                              );
+                            })}
+                          </div>
+                          
+                          <button 
+                            className="pagination-btn"
+                            onClick={() => setCurrentPage(currentPage + 1)}
+                            disabled={currentPage === totalPages}
+                          >
+                            Next
+                          </button>
+                          
+                          <button 
+                            className="pagination-btn"
+                            onClick={() => setCurrentPage(totalPages)}
+                            disabled={currentPage === totalPages}
+                          >
+                            Last
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                  </>
+                )}
+              </>
+            )}
+          </div>
+        </section>
+      </main>
+      
+      {/* Profile Modal */}
+      {showProfile && session?.user && (
+        <ProfilePage 
+          user={session.user} 
+          onClose={() => setShowProfile(false)} 
+        />
+      )}
+
+      {/* Version History Modal */}
+      <VersionHistory 
+        isOpen={showVersionHistory}
+        onClose={() => setShowVersionHistory(false)}
+        lang={lang}
+      />
+    </>
+  );
+}

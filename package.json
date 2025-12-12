@@ -1,0 +1,37 @@
+{
+  "name": "iclr-review-next",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "init-db": "node scripts/init-auth-db.js",
+    "test-db": "node test-db-connection.js",
+    "diagnose-neon": "node diagnose-neon.js",
+    "fix-neon": "node fix-neon-connection.js",
+    "migrate-json": "node scripts/migrate-json-to-db.js",
+    "migrate-json-fast": "node scripts/migrate-json-to-db-optimized.js",
+    "migrate-json-final": "node scripts/migrate-json-final.cjs"
+  },
+  "dependencies": {
+    "@radix-ui/react-select": "^2.2.6",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@radix-ui/react-tabs": "^1.1.13",
+    "better-auth": "^1.4.3",
+    "chart.js": "^4.5.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.2.3",
+    "lucide-react": "^0.555.0",
+    "next": "^14.2.33",
+    "pg": "^8.16.3",
+    "pg-copy-streams": "^7.0.0",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "18.2.0",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss": "^4.1.17",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}

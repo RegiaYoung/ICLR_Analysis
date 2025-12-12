@@ -1,0 +1,6 @@
+# Only track large files with LFS
+*.jsonl filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+
+# Large JSON files (>1MB) should be tracked individually if needed
+# Example: large-data.json filter=lfs diff=lfs merge=lfs -text
