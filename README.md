@@ -92,39 +92,59 @@ A comprehensive platform for analyzing peer review data from the International C
 - Node.js 18+ and npm/yarn
 - PostgreSQL database
 
-## 🔧 Installation
+## 🔧 Data preparation & installation
 
-1. **Clone the repository**
+1. **Prepare and enrich raw reviews**
+   - Start from a reviews JSONL file that includes submission, author, and `reviewer_id` data (for example: `iclr2026_reviews_10000.jsonl`).
+   - Run the enrichment helpers to add missing organization and country information:
+     ```bash
+     python scripts/enrich_institutions_optimized.py  # fill in institution names
+     python scripts/enrich_country.py                 # append country details
+     ```
+     You can extend these enrichers (or add new ones) to include extra attributes such as gender when available.
+
+2. **Convert to the platform schema**
+   ```bash
+   python scripts/convert_data.py
+   ```
+   This produces the `review-data` folder that matches the expected data schema.
+
+3. **Clone the repository**
    ```bash
    git clone https://github.com/RegiaYoung/ICLR_Analysis.git
    cd ICLR_Analysis
    ```
 
-2. **Install dependencies**
+4. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. **Set up environment variables**
+5. **Set up environment variables**
    ```bash
    cp .env.example .env.local
    ```
    Edit `.env.local` with your configuration:
-   - Database connection string
+   - Database connection string (local PostgreSQL or Neon)
    - OAuth credentials (optional)
    - Better Auth secret
 
-4. **Set up the database**
+6. **Initialize the database schema**
    ```bash
    npm run init-db
    ```
 
-5. **Import data** (if you have ICLR review data)
+7. **Import JSON data into the database**
    ```bash
-   npm run migrate-json
+   npm run migrate-json-final
    ```
 
-6. **Start the development server**
+8. **Generate static assets for the web app**
+   ```bash
+   node scripts/generate-static-from-json.js
+   ```
+
+9. **Start the development server**
    ```bash
    npm run dev
    ```

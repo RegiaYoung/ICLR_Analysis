@@ -92,38 +92,58 @@
 - Node.js 18+ 和 npm/yarn
 - PostgreSQL 数据库
 
-## 🔧 安装步骤
+## 🔧 数据准备与安装
 
-1. **克隆代码库**
+1. **准备并补充原始评审数据**
+   - 从包含投稿、作者和 `reviewer_id` 的 JSONL 评审数据开始（例如：`iclr2026_reviews_10000.jsonl`）。
+   - 使用补充脚本填充缺失的机构与国家信息：
+     ```bash
+     python scripts/enrich_institutions_optimized.py  # 补全机构名称
+     python scripts/enrich_country.py                 # 添加国家信息
+     ```
+     如果有需要，你可以扩展这些脚本（或新增补充脚本）来补充性别等字段。
+
+2. **转换为平台所需的数据模式**
+   ```bash
+   python scripts/convert_data.py
+   ```
+   生成符合数据模式的 `review-data` 目录。
+
+3. **克隆代码库**
    ```bash
    git clone https://github.com/RegiaYoung/ICLR_Analysis.git
    cd ICLR_Analysis
    ```
 
-2. **安装依赖**
+4. **安装依赖**
    ```bash
    npm install
    ```
 
-3. **设置环境变量**
+5. **设置环境变量**
    ```bash
    cp .env.example .env.local
    ```
    编辑 `.env.local` 文件配置：
-   - 数据库连接字符串
+   - 数据库连接字符串（本地 PostgreSQL 或 Neon）
    - Better Auth 密钥
 
-4. **设置数据库**
+6. **初始化数据库表结构**
    ```bash
    npm run init-db
    ```
 
-5. **导入数据**（如果有 ICLR 评审数据）
+7. **导入 JSON 数据到数据库**
    ```bash
-   npm run migrate-json
+   npm run migrate-json-final
    ```
 
-6. **启动开发服务器**
+8. **为前端生成静态资源**
+   ```bash
+   node scripts/generate-static-from-json.js
+   ```
+
+9. **启动开发服务器**
    ```bash
    npm run dev
    ```
