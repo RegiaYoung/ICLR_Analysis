@@ -3,7 +3,7 @@
 <div align="center">
 
 ![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-http://10.123.4.17:3000/-blue?style=for-the-badge&logo=globe&logoColor=white)
-![Version](https://img.shields.io/badge/Version-1.0.0-green?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-2.0.0-green?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 **English** | [简体中文](README.zh.md)
@@ -14,7 +14,7 @@ A comprehensive platform for analyzing peer review data from the International C
 
 ## 🌐 Live Demo
 
-**Access**: [http://10.123.4.17:3000/](http://10.123.4.17:3000/)
+**Access (in Campus)**: [http://10.123.4.17:3000/](http://10.123.4.17:3000/)
 
 <div align="center">
   <img src="asserts/overview.jpg" alt="Platform Overview" style="width:100%; max-width:900px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.2);"/>

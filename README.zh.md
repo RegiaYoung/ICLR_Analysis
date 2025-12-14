@@ -3,7 +3,7 @@
 <div align="center">
 
 ![在线演示](https://img.shields.io/badge/🌐_在线演示-http://10.123.4.17:3000/-blue?style=for-the-badge&logo=globe&logoColor=white)
-![版本](https://img.shields.io/badge/版本-1.0.0-green?style=for-the-badge)
+![版本](https://img.shields.io/badge/版本-2.0.0-green?style=for-the-badge)
 ![许可证](https://img.shields.io/badge/许可证-MIT-yellow?style=for-the-badge)
 
 [English](README.md) | **简体中文**
@@ -14,7 +14,7 @@
 
 ## 🌐 在线演示
 
-**访问地址**: [http://10.123.4.17:3000/](http://10.123.4.17:3000/)
+**访问地址（校内）**: [http://10.123.4.17:3000/](http://10.123.4.17:3000/) 
 
 <div align="center">
   <img src="asserts/overview.jpg" alt="平台概览" style="width:100%; max-width:900px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.2);"/>
