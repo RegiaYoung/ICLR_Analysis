@@ -1428,7 +1428,7 @@ export default function Home() {
               <div style={{ marginTop: '32px' }}>
                 <div className="section-header">
                   <div className="section-title">
-                    👤 {t('search_results_for')} "{searchResults.query}" • {searchResults.total || 0} {t('people_found')}
+                    👤 {t('search_results_for')} "{searchResults.query}" • {(searchResults.total_found ?? searchResults.total ?? searchResults.results?.length ?? 0)} {t('people_found')}
                   </div>
                 </div>
                 <div className="panel">
@@ -1520,14 +1520,16 @@ export default function Home() {
                               {(() => {
                                 if (typeof person.institution === 'object' && person.institution && person.institution.type) {
                                   return person.institution.type;
+                                } else if (person.institution_type) {
+                                  return person.institution_type;
                                 } else {
                                   try {
-                                    const inst = typeof person.institution === 'string' && person.institution.startsWith('{') 
-                                      ? JSON.parse(person.institution) 
+                                    const inst = typeof person.institution === 'string' && person.institution.startsWith('{')
+                                      ? JSON.parse(person.institution)
                                       : person.institution;
-                                    return formatValue(inst && inst.type);
+                                    return formatValue(inst && inst.type) || 'Unknown';
                                   } catch {
-                                    return '';
+                                    return person.institution_type || 'Unknown';
                                   }
                                 }
                               })()}
