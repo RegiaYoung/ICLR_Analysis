@@ -665,7 +665,7 @@ export default function Home() {
                 <input
                   id="search-input"
                   type="text"
-                  placeholder="e.g., 1234"
+                  placeholder="e.g., 2959"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />

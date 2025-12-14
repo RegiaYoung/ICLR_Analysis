@@ -25,13 +25,13 @@ A comprehensive platform for analyzing peer review data from the International C
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="asserts/search_people.png" alt="People Search" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
+      <img src="asserts/search_people.jpg" alt="People Search" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
       <br/><br/>
       <h4>👥 People Search</h4>
       <p><em>Search researchers by name, institution, nationality and more</em></p>
     </td>
     <td width="50%" align="center">
-      <img src="asserts/search_paper.png" alt="Paper Search" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
+      <img src="asserts/search_paper.jpg" alt="Paper Search" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
       <br/><br/>
       <h4>📄 Paper Search</h4>
       <p><em>Find submitted papers and related review information</em></p>
@@ -44,13 +44,13 @@ A comprehensive platform for analyzing peer review data from the International C
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="asserts/reviewer.png" alt="Reviewer Analysis" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
+      <img src="asserts/reviewer.jpg" alt="Reviewer Analysis" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
       <br/><br/>
       <h4>🔍 Reviewer Analysis</h4>
       <p><em>Analyze reviewer strictness, consistency, and bias patterns</em></p>
     </td>
     <td width="50%" align="center">
-      <img src="asserts/institution.png" alt="Institution Analysis" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
+      <img src="asserts/institution.jpg" alt="Institution Analysis" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
       <br/><br/>
       <h4>🏫 Institution Analysis</h4>
       <p><em>Institutional influence and geographical distribution analysis</em></p>

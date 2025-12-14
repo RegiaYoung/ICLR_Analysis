@@ -1180,7 +1180,7 @@ export default function Home() {
                       Find reviewers who evaluated a specific paper
                     </div>
                     <div style={{ fontFamily: 'monospace', background: 'var(--color-surface)', padding: '8px', borderRadius: '4px' }}>
-                      Try: <strong>1</strong> or <strong>2765</strong>
+                      Try: <strong>1</strong> or <strong>2959</strong>
                     </div>
                     <div style={{ fontSize: '12px', marginTop: '8px', color: 'var(--color-muted)' }}>
                       → Shows reviewers, ratings, confidence scores, and review summaries
@@ -1215,7 +1215,7 @@ export default function Home() {
                     <input
                       id="search-input"
                       type="text"
-                      placeholder="e.g., 1234 or 'David Kim'"
+                      placeholder="e.g., 2959 or 'David Kim'"
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}
                       onKeyPress={(e) => {
