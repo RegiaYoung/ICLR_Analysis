@@ -16,28 +16,13 @@ A comprehensive platform for analyzing peer review data from the International C
 
 **Access**: [http://10.123.4.17:3000/](http://10.123.4.17:3000/)
 
+<div align="center">
+  <img src="asserts/overview.jpg" alt="Platform Overview" style="width:100%; max-width:900px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.2);"/>
+</div>
+
 ## 📸 Feature Showcase
 
 <div align="center">
-
-### 🔍 Intelligent Search Features
-
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <img src="asserts/search_people.jpg" alt="People Search" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
-      <br/><br/>
-      <h4>👥 People Search</h4>
-      <p><em>Search researchers by name, institution, nationality and more</em></p>
-    </td>
-    <td width="50%" align="center">
-      <img src="asserts/search_paper.jpg" alt="Paper Search" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
-      <br/><br/>
-      <h4>📄 Paper Search</h4>
-      <p><em>Find submitted papers and related review information</em></p>
-    </td>
-  </tr>
-</table>
 
 ### 📊 Data Analysis Features
 
@@ -47,13 +32,46 @@ A comprehensive platform for analyzing peer review data from the International C
       <img src="asserts/reviewer.jpg" alt="Reviewer Analysis" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
       <br/><br/>
       <h4>🔍 Reviewer Analysis</h4>
-      <p><em>Analyze reviewer strictness, consistency, and bias patterns</em></p>
+      <p><em>Profile reviewer rigor, scoring patterns, and hidden biases</em></p>
+    </td>
+    <td width="50%" align="center">
+      <img src="asserts/quality.jpg" alt="Quality Insights" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
+      <br/><br/>
+      <h4>🎯 Quality Insights</h4>
+      <p><em>Assess rating quality, variance, and consistency across reviewers</em></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="asserts/conflict.jpg" alt="Conflict Detection" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
+      <br/><br/>
+      <h4>⚖️ Conflict Detection</h4>
+      <p><em>Spot potential conflicts of interest between reviewers and submissions</em></p>
     </td>
     <td width="50%" align="center">
       <img src="asserts/institution.jpg" alt="Institution Analysis" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
       <br/><br/>
       <h4>🏫 Institution Analysis</h4>
-      <p><em>Institutional influence and geographical distribution analysis</em></p>
+      <p><em>Map institutional influence, collaborations, and geographic reach</em></p>
+    </td>
+  </tr>
+</table>
+
+### 🔍 Intelligent Search Features
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="asserts/search_people.jpg" alt="People Search" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
+      <br/><br/>
+      <h4>👥 People Search</h4>
+      <p><em>Find researchers by name, affiliation, country, and expertise</em></p>
+    </td>
+    <td width="50%" align="center">
+      <img src="asserts/search_paper.jpg" alt="Paper Search" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
+      <br/><br/>
+      <h4>📄 Paper Search</h4>
+      <p><em>Locate submissions and explore their review histories instantly</em></p>
     </td>
   </tr>
 </table>

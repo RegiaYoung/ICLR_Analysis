@@ -16,44 +16,62 @@
 
 **访问地址**: [http://10.123.4.17:3000/](http://10.123.4.17:3000/)
 
+<div align="center">
+  <img src="asserts/overview.jpg" alt="平台概览" style="width:100%; max-width:900px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.2);"/>
+</div>
+
 ## 📸 功能展示
 
 <div align="center">
-
-### 🔍 智能搜索功能
-
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <img src="asserts/search_people.png" alt="人员搜索" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
-      <br/><br/>
-      <h4>👥 人员搜索</h4>
-      <p><em>按姓名、机构、国籍等条件搜索研究人员</em></p>
-    </td>
-    <td width="50%" align="center">
-      <img src="asserts/search_paper.png" alt="论文搜索" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
-      <br/><br/>
-      <h4>📄 论文搜索</h4>
-      <p><em>搜索提交的论文和相关评审信息</em></p>
-    </td>
-  </tr>
-</table>
 
 ### 📊 数据分析功能
 
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="asserts/reviewer.png" alt="评审者分析" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
+      <img src="asserts/reviewer.jpg" alt="评审者分析" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
       <br/><br/>
       <h4>🔍 评审者分析</h4>
-      <p><em>评审者严格性、一致性和偏见模式分析</em></p>
+      <p><em>洞察评审者的严格程度、打分模式与潜在偏差</em></p>
     </td>
     <td width="50%" align="center">
-      <img src="asserts/institution.png" alt="机构分析" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
+      <img src="asserts/quality.jpg" alt="质量洞察" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
+      <br/><br/>
+      <h4>🎯 质量洞察</h4>
+      <p><em>评估评分质量、方差以及不同评审间的一致性</em></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="asserts/conflict.jpg" alt="冲突检测" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
+      <br/><br/>
+      <h4>⚖️ 冲突检测</h4>
+      <p><em>识别评审人与投稿之间的潜在利益冲突</em></p>
+    </td>
+    <td width="50%" align="center">
+      <img src="asserts/institution.jpg" alt="机构分析" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
       <br/><br/>
       <h4>🏫 机构分析</h4>
-      <p><em>机构影响力和地理分布分析</em></p>
+      <p><em>梳理机构影响力、合作网络与地理覆盖</em></p>
+    </td>
+  </tr>
+</table>
+
+### 🔍 智能搜索功能
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="asserts/search_people.jpg" alt="人员搜索" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
+      <br/><br/>
+      <h4>👥 人员搜索</h4>
+      <p><em>按姓名、机构、国家与研究方向精准搜索研究人员</em></p>
+    </td>
+    <td width="50%" align="center">
+      <img src="asserts/search_paper.jpg" alt="论文搜索" style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"/>
+      <br/><br/>
+      <h4>📄 论文搜索</h4>
+      <p><em>快速定位投稿并查看完整评审记录</em></p>
     </td>
   </tr>
 </table>
