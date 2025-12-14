@@ -1,1 +1,4688 @@
-{"coverage_analysis":{"total_submissions":7650,"total_reviews":29411,"avg_reviews_per_submission":3.84,"well_reviewed":7576,"under_reviewed":74,"no_reviews":0,"review_distribution":{}},"top_quality_reviewers":[{"reviewer_id":null,"reviewer_types":["experienced"],"review_count":2323,"avg_rating":4.39,"rating_std":1.8026121265720123,"avg_confidence":3.653895824365045,"avg_text_length":2468.3263021954367,"question_ratio":1,"consistency_score":54.9,"engagement_score":100,"experience_score":100,"confidence_score":73.1,"overall_quality_score":82},{"reviewer_id":"~Jiangang_Wang1","reviewer_types":["experienced"],"review_count":5,"avg_rating":2,"rating_std":0,"avg_confidence":5,"avg_text_length":2284.6,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":10,"confidence_score":100,"overall_quality_score":77.5},{"reviewer_id":"~Jiancheng_Huang1","reviewer_types":["experienced"],"review_count":4,"avg_rating":6,"rating_std":0,"avg_confidence":5,"avg_text_length":1404.75,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":8,"confidence_score":100,"overall_quality_score":77},{"reviewer_id":"~Yeongyeon_Na1","reviewer_types":["experienced"],"review_count":4,"avg_rating":2,"rating_std":0,"avg_confidence":5,"avg_text_length":4843.5,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":8,"confidence_score":100,"overall_quality_score":77},{"reviewer_id":"~Aritra_Bhowmik1","reviewer_types":["experienced"],"review_count":4,"avg_rating":4,"rating_std":0,"avg_confidence":5,"avg_text_length":3498.75,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":8,"confidence_score":100,"overall_quality_score":77},{"reviewer_id":"~Luyao_Tang1","reviewer_types":["experienced"],"review_count":4,"avg_rating":4,"rating_std":0,"avg_confidence":5,"avg_text_length":3989.5,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":8,"confidence_score":100,"overall_quality_score":77},{"reviewer_id":"~Han_Gao3","reviewer_types":["experienced"],"review_count":4,"avg_rating":2,"rating_std":0,"avg_confidence":5,"avg_text_length":1053.5,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":8,"confidence_score":100,"overall_quality_score":77},{"reviewer_id":"~Jiahao_Yu1","reviewer_types":["experienced"],"review_count":3,"avg_rating":2,"rating_std":0,"avg_confidence":5,"avg_text_length":1864.3333333333333,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Yongkweon_Jeon1","reviewer_types":["experienced"],"review_count":3,"avg_rating":2,"rating_std":0,"avg_confidence":5,"avg_text_length":1826,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Yanjing_Li2","reviewer_types":["experienced"],"review_count":3,"avg_rating":4,"rating_std":0,"avg_confidence":5,"avg_text_length":1816,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Sonal_Kumar1","reviewer_types":["experienced"],"review_count":3,"avg_rating":4,"rating_std":0,"avg_confidence":5,"avg_text_length":2961.3333333333335,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Shujian_Zhang1","reviewer_types":["experienced"],"review_count":3,"avg_rating":4,"rating_std":0,"avg_confidence":5,"avg_text_length":2993.3333333333335,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Khai_Nguyen1","reviewer_types":["experienced"],"review_count":3,"avg_rating":8,"rating_std":0,"avg_confidence":5,"avg_text_length":2558.3333333333335,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Yuzhang_Shang1","reviewer_types":["experienced"],"review_count":3,"avg_rating":4,"rating_std":0,"avg_confidence":5,"avg_text_length":1613,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Jian_Liu17","reviewer_types":["experienced"],"review_count":3,"avg_rating":4,"rating_std":0,"avg_confidence":5,"avg_text_length":3357.6666666666665,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Kangning_Liu1","reviewer_types":["experienced"],"review_count":3,"avg_rating":4,"rating_std":0,"avg_confidence":5,"avg_text_length":3647.6666666666665,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Zi_Yang3","reviewer_types":["experienced"],"review_count":3,"avg_rating":2,"rating_std":0,"avg_confidence":5,"avg_text_length":2006.6666666666667,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Chaoqi_Chen2","reviewer_types":["experienced"],"review_count":3,"avg_rating":4,"rating_std":0,"avg_confidence":5,"avg_text_length":1895.3333333333333,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Muxing_Li2","reviewer_types":["experienced"],"review_count":3,"avg_rating":4,"rating_std":0,"avg_confidence":5,"avg_text_length":2473,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Roopali_Vij1","reviewer_types":["experienced"],"review_count":3,"avg_rating":6,"rating_std":0,"avg_confidence":5,"avg_text_length":5626.666666666667,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Saehyung_Lee1","reviewer_types":["experienced"],"review_count":3,"avg_rating":4,"rating_std":0,"avg_confidence":5,"avg_text_length":1918,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Zijian_Chen1","reviewer_types":["experienced"],"review_count":3,"avg_rating":4,"rating_std":0,"avg_confidence":5,"avg_text_length":2908,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Fu-Jen_Tsai1","reviewer_types":["experienced"],"review_count":3,"avg_rating":4,"rating_std":0,"avg_confidence":5,"avg_text_length":2477,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Matthew_Macfarlane1","reviewer_types":["experienced"],"review_count":3,"avg_rating":2,"rating_std":0,"avg_confidence":5,"avg_text_length":3667.3333333333335,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Yuhang_Li1","reviewer_types":["experienced"],"review_count":3,"avg_rating":2,"rating_std":0,"avg_confidence":5,"avg_text_length":2665,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Hao_LU8","reviewer_types":["experienced"],"review_count":3,"avg_rating":4,"rating_std":0,"avg_confidence":5,"avg_text_length":2294,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Gang_Dai1","reviewer_types":["experienced"],"review_count":3,"avg_rating":4,"rating_std":0,"avg_confidence":5,"avg_text_length":1864.6666666666667,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Weizhu_Qian1","reviewer_types":["experienced"],"review_count":3,"avg_rating":2,"rating_std":0,"avg_confidence":5,"avg_text_length":1363.6666666666667,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~ZHAO_WANGBO1","reviewer_types":["experienced"],"review_count":3,"avg_rating":6,"rating_std":0,"avg_confidence":5,"avg_text_length":1341,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5},{"reviewer_id":"~Raha_Moraffah1","reviewer_types":["experienced"],"review_count":3,"avg_rating":2,"rating_std":0,"avg_confidence":5,"avg_text_length":1230.3333333333333,"question_ratio":1,"consistency_score":100,"engagement_score":100,"experience_score":6,"confidence_score":100,"overall_quality_score":76.5}],"paper_quality_analysis":[{"submission_id":2765,"submission_number":2765,"type":"disputed_submissions","review_count":3,"avg_rating":4.67,"rating_std":3.77,"rating_range":8,"avg_confidence":4.33,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":true}},{"submission_id":8972,"submission_number":8972,"type":"disputed_submissions","review_count":3,"avg_rating":5.33,"rating_std":3.4,"rating_range":8,"avg_confidence":3,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":389,"submission_number":389,"type":"disputed_submissions","review_count":4,"avg_rating":5,"rating_std":3.32,"rating_range":8,"avg_confidence":4.25,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":true}},{"submission_id":4233,"submission_number":4233,"type":"disputed_submissions","review_count":4,"avg_rating":5,"rating_std":3.32,"rating_range":8,"avg_confidence":4.25,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":true}},{"submission_id":5251,"submission_number":5251,"type":"disputed_submissions","review_count":4,"avg_rating":7,"rating_std":3.32,"rating_range":8,"avg_confidence":3.5,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":5740,"submission_number":5740,"type":"disputed_submissions","review_count":4,"avg_rating":7,"rating_std":3.32,"rating_range":8,"avg_confidence":4,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":3706,"submission_number":3706,"type":"disputed_submissions","review_count":4,"avg_rating":7.5,"rating_std":3.28,"rating_range":8,"avg_confidence":3.25,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":9036,"submission_number":9036,"type":"disputed_submissions","review_count":4,"avg_rating":4.5,"rating_std":3.28,"rating_range":8,"avg_confidence":4.5,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":true}},{"submission_id":1426,"submission_number":1426,"type":"disputed_submissions","review_count":4,"avg_rating":6,"rating_std":3.16,"rating_range":8,"avg_confidence":4,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":9559,"submission_number":9559,"type":"disputed_submissions","review_count":4,"avg_rating":6,"rating_std":3.16,"rating_range":8,"avg_confidence":3.25,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":774,"submission_number":774,"type":"disputed_submissions","review_count":4,"avg_rating":5,"rating_std":3,"rating_range":8,"avg_confidence":3,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":1087,"submission_number":1087,"type":"disputed_submissions","review_count":4,"avg_rating":5,"rating_std":3,"rating_range":6,"avg_confidence":3.5,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":1297,"submission_number":1297,"type":"disputed_submissions","review_count":4,"avg_rating":5,"rating_std":3,"rating_range":6,"avg_confidence":4.25,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":true}},{"submission_id":4092,"submission_number":4092,"type":"disputed_submissions","review_count":4,"avg_rating":5,"rating_std":3,"rating_range":6,"avg_confidence":4.25,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":true}},{"submission_id":4900,"submission_number":4900,"type":"disputed_submissions","review_count":4,"avg_rating":5,"rating_std":3,"rating_range":6,"avg_confidence":3.5,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":6208,"submission_number":6208,"type":"disputed_submissions","review_count":4,"avg_rating":5,"rating_std":3,"rating_range":8,"avg_confidence":3.75,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":7578,"submission_number":7578,"type":"disputed_submissions","review_count":4,"avg_rating":5,"rating_std":3,"rating_range":8,"avg_confidence":4,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":7753,"submission_number":7753,"type":"disputed_submissions","review_count":2,"avg_rating":5,"rating_std":3,"rating_range":6,"avg_confidence":4.5,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":true}},{"submission_id":929,"submission_number":929,"type":"disputed_submissions","review_count":4,"avg_rating":5.5,"rating_std":2.96,"rating_range":8,"avg_confidence":3.75,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":3468,"submission_number":3468,"type":"disputed_submissions","review_count":4,"avg_rating":5.5,"rating_std":2.96,"rating_range":8,"avg_confidence":4.25,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":true}},{"submission_id":4662,"submission_number":4662,"type":"disputed_submissions","review_count":4,"avg_rating":5.5,"rating_std":2.96,"rating_range":8,"avg_confidence":4,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":9055,"submission_number":9055,"type":"disputed_submissions","review_count":4,"avg_rating":5.5,"rating_std":2.96,"rating_range":8,"avg_confidence":4,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":9444,"submission_number":9444,"type":"disputed_submissions","review_count":4,"avg_rating":5.5,"rating_std":2.96,"rating_range":8,"avg_confidence":3.75,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":360,"submission_number":360,"type":"disputed_submissions","review_count":3,"avg_rating":4,"rating_std":2.83,"rating_range":6,"avg_confidence":4,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":558,"submission_number":558,"type":"disputed_submissions","review_count":4,"avg_rating":6,"rating_std":2.83,"rating_range":8,"avg_confidence":4,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":1336,"submission_number":1336,"type":"disputed_submissions","review_count":3,"avg_rating":6,"rating_std":2.83,"rating_range":6,"avg_confidence":3.33,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":1761,"submission_number":1761,"type":"disputed_submissions","review_count":3,"avg_rating":6,"rating_std":2.83,"rating_range":6,"avg_confidence":3.33,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":3108,"submission_number":3108,"type":"disputed_submissions","review_count":3,"avg_rating":4,"rating_std":2.83,"rating_range":6,"avg_confidence":4,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":3145,"submission_number":3145,"type":"disputed_submissions","review_count":3,"avg_rating":4,"rating_std":2.83,"rating_range":6,"avg_confidence":4,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":4655,"submission_number":4655,"type":"disputed_submissions","review_count":4,"avg_rating":6,"rating_std":2.83,"rating_range":8,"avg_confidence":4,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":4661,"submission_number":4661,"type":"disputed_submissions","review_count":3,"avg_rating":6,"rating_std":2.83,"rating_range":6,"avg_confidence":3.67,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":5140,"submission_number":5140,"type":"disputed_submissions","review_count":3,"avg_rating":4,"rating_std":2.83,"rating_range":6,"avg_confidence":3.33,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":5393,"submission_number":5393,"type":"disputed_submissions","review_count":3,"avg_rating":4,"rating_std":2.83,"rating_range":6,"avg_confidence":3.67,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":5640,"submission_number":5640,"type":"disputed_submissions","review_count":3,"avg_rating":6,"rating_std":2.83,"rating_range":6,"avg_confidence":3,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":6619,"submission_number":6619,"type":"disputed_submissions","review_count":3,"avg_rating":6,"rating_std":2.83,"rating_range":6,"avg_confidence":3.67,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":7454,"submission_number":7454,"type":"disputed_submissions","review_count":3,"avg_rating":4,"rating_std":2.83,"rating_range":6,"avg_confidence":3.67,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":7489,"submission_number":7489,"type":"disputed_submissions","review_count":4,"avg_rating":6,"rating_std":2.83,"rating_range":8,"avg_confidence":3.75,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":7533,"submission_number":7533,"type":"disputed_submissions","review_count":3,"avg_rating":6,"rating_std":2.83,"rating_range":6,"avg_confidence":3.67,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":false}},{"submission_id":7914,"submission_number":7914,"type":"disputed_submissions","review_count":3,"avg_rating":4,"rating_std":2.83,"rating_range":6,"avg_confidence":4.33,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":false,"high_agreement":false,"narrow_range":false,"high_confidence":true}},{"submission_id":7999,"submission_number":7999,"type":"disputed_submissions","review_count":3,"avg_rating":4,"rating_std":2.83,"rating_range":6,"avg_confidence":2.67,"quality_indicators":{"high_disagreement":true,"wide_range":true,"low_confidence":true,"high_agreement":false,"narrow_range":false,"high_confidence":false}}],"system_health_metrics":{"reviewer_diversity":{"total_unique_reviewers":13453,"active_reviewers":3878,"expert_reviewers":1},"quality_distribution":{"high_quality_reviewers":1,"medium_quality_reviewers":2673,"improvement_needed_reviewers":1204},"review_consistency":{"highly_consistent_papers":3061,"disputed_papers":711,"consistency_ratio":40.01}},"regional_quality_comparison":[{"nationality":"Bangladesh","reviewer_count":10,"avg_reviews_per_reviewer":3.6,"avg_rating_given":3.68,"avg_confidence":3.58,"avg_consistency":78.1,"quality_tier":"Regular Contributor"},{"nationality":"Malaysia","reviewer_count":5,"avg_reviews_per_reviewer":3.2,"avg_rating_given":4.77,"avg_confidence":3.42,"avg_consistency":73.4,"quality_tier":"Regular Contributor"},{"nationality":"China","reviewer_count":2717,"avg_reviews_per_reviewer":3.4,"avg_rating_given":4.51,"avg_confidence":3.72,"avg_consistency":70.9,"quality_tier":"Major Contributor"},{"nationality":"Netherlands","reviewer_count":8,"avg_reviews_per_reviewer":3.1,"avg_rating_given":3.31,"avg_confidence":3.42,"avg_consistency":70.7,"quality_tier":"Regular Contributor"},{"nationality":"Pakistan","reviewer_count":15,"avg_reviews_per_reviewer":3.2,"avg_rating_given":4.63,"avg_confidence":3.6,"avg_consistency":70.4,"quality_tier":"Regular Contributor"},{"nationality":"Vietnam","reviewer_count":31,"avg_reviews_per_reviewer":3.5,"avg_rating_given":4.43,"avg_confidence":3.73,"avg_consistency":69.5,"quality_tier":"Active Contributor"},{"nationality":"Romania","reviewer_count":8,"avg_reviews_per_reviewer":3,"avg_rating_given":4.17,"avg_confidence":3.54,"avg_consistency":69.4,"quality_tier":"Regular Contributor"},{"nationality":"Japan","reviewer_count":28,"avg_reviews_per_reviewer":3.4,"avg_rating_given":4.45,"avg_confidence":3.29,"avg_consistency":69.1,"quality_tier":"Active Contributor"},{"nationality":"Iran","reviewer_count":49,"avg_reviews_per_reviewer":3.3,"avg_rating_given":4.46,"avg_confidence":3.74,"avg_consistency":68.4,"quality_tier":"Active Contributor"},{"nationality":"South Korea","reviewer_count":244,"avg_reviews_per_reviewer":3.4,"avg_rating_given":4.21,"avg_confidence":3.64,"avg_consistency":68,"quality_tier":"Major Contributor"},{"nationality":"India","reviewer_count":195,"avg_reviews_per_reviewer":3.3,"avg_rating_given":4.61,"avg_confidence":3.73,"avg_consistency":67.2,"quality_tier":"Major Contributor"},{"nationality":"Turkey","reviewer_count":28,"avg_reviews_per_reviewer":3.3,"avg_rating_given":3.97,"avg_confidence":3.71,"avg_consistency":66.9,"quality_tier":"Active Contributor"},{"nationality":"Taiwan","reviewer_count":33,"avg_reviews_per_reviewer":3.3,"avg_rating_given":4.39,"avg_confidence":3.79,"avg_consistency":66.4,"quality_tier":"Active Contributor"},{"nationality":"Croatia","reviewer_count":5,"avg_reviews_per_reviewer":3.2,"avg_rating_given":4.17,"avg_confidence":3.45,"avg_consistency":66,"quality_tier":"Regular Contributor"},{"nationality":"Hong Kong","reviewer_count":5,"avg_reviews_per_reviewer":3.8,"avg_rating_given":4.43,"avg_confidence":3.75,"avg_consistency":65.8,"quality_tier":"Regular Contributor"},{"nationality":"Italy","reviewer_count":44,"avg_reviews_per_reviewer":3.3,"avg_rating_given":4.41,"avg_confidence":3.6,"avg_consistency":64.9,"quality_tier":"Active Contributor"},{"nationality":"Greece","reviewer_count":21,"avg_reviews_per_reviewer":3.4,"avg_rating_given":4.74,"avg_confidence":3.43,"avg_consistency":64.6,"quality_tier":"Active Contributor"},{"nationality":"Egypt","reviewer_count":7,"avg_reviews_per_reviewer":3.4,"avg_rating_given":4.69,"avg_confidence":3.95,"avg_consistency":63.9,"quality_tier":"Regular Contributor"},{"nationality":"Germany","reviewer_count":64,"avg_reviews_per_reviewer":3.2,"avg_rating_given":4.45,"avg_confidence":3.49,"avg_consistency":63.1,"quality_tier":"Major Contributor"},{"nationality":"United States","reviewer_count":83,"avg_reviews_per_reviewer":3.2,"avg_rating_given":4.73,"avg_confidence":3.51,"avg_consistency":62.1,"quality_tier":"Major Contributor"}],"metadata":{"analysis_timestamp":"2025-11-29T23:31:12.194Z","data_quality":"Comprehensive analysis based on local review data","data_source":"local_review_data"}}
+{
+  "coverage_analysis": {
+    "total_submissions": 7655,
+    "total_reviews": 29813,
+    "avg_reviews_per_submission": 3.89,
+    "well_reviewed": 7654,
+    "under_reviewed": 1,
+    "no_reviews": 0,
+    "review_distribution": {}
+  },
+  "top_quality_reviewers": [
+    {
+      "reviewer_id": "~Dilip_Arumugam1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 0.5,
+      "rating_std": 0.87,
+      "avg_confidence": 4,
+      "avg_text_length": 1831,
+      "question_ratio": 1,
+      "consistency_score": 87,
+      "engagement_score": 73,
+      "experience_score": 20,
+      "confidence_score": 80,
+      "overall_quality_score": 65
+    },
+    {
+      "reviewer_id": "~Fu-Ming_Guo2",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 6,
+      "rating_std": 0,
+      "avg_confidence": 4,
+      "avg_text_length": 1663,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 64,
+      "experience_score": 15,
+      "confidence_score": 80,
+      "overall_quality_score": 64.8
+    },
+    {
+      "reviewer_id": "~Yeongyeon_Na1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 2,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 647,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 34,
+      "experience_score": 20,
+      "confidence_score": 100,
+      "overall_quality_score": 63.5
+    },
+    {
+      "reviewer_id": "~Shuai_Huang4",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 2.67,
+      "rating_std": 0.94,
+      "avg_confidence": 4.33,
+      "avg_text_length": 1711,
+      "question_ratio": 1,
+      "consistency_score": 85.9,
+      "engagement_score": 66,
+      "experience_score": 15,
+      "confidence_score": 86.6,
+      "overall_quality_score": 63.4
+    },
+    {
+      "reviewer_id": "~Jiangang_Wang1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 5,
+      "avg_rating": 2,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 323,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 26,
+      "experience_score": 25,
+      "confidence_score": 100,
+      "overall_quality_score": 62.8
+    },
+    {
+      "reviewer_id": "~Luyao_Tang1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 563,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 31,
+      "experience_score": 20,
+      "confidence_score": 100,
+      "overall_quality_score": 62.8
+    },
+    {
+      "reviewer_id": "~Roopali_Vij1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 6,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 799,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 36,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 62.8
+    },
+    {
+      "reviewer_id": "~Chi_Xie1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 4.75,
+      "avg_text_length": 688,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 35,
+      "experience_score": 20,
+      "confidence_score": 95,
+      "overall_quality_score": 62.5
+    },
+    {
+      "reviewer_id": "~Qingdong_He1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 5,
+      "avg_rating": 2.4,
+      "rating_std": 0.8,
+      "avg_confidence": 5,
+      "avg_text_length": 590,
+      "question_ratio": 1,
+      "consistency_score": 88,
+      "engagement_score": 35,
+      "experience_score": 25,
+      "confidence_score": 100,
+      "overall_quality_score": 62
+    },
+    {
+      "reviewer_id": "~Aritra_Bhowmik1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 477,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 28,
+      "experience_score": 20,
+      "confidence_score": 100,
+      "overall_quality_score": 62
+    },
+    {
+      "reviewer_id": "~Ge_Gao8",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 5,
+      "avg_rating": 3.6,
+      "rating_std": 0.8,
+      "avg_confidence": 5,
+      "avg_text_length": 558,
+      "question_ratio": 1,
+      "consistency_score": 88,
+      "engagement_score": 34,
+      "experience_score": 25,
+      "confidence_score": 100,
+      "overall_quality_score": 61.8
+    },
+    {
+      "reviewer_id": "~ma_yue1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 4.75,
+      "avg_text_length": 611,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 32,
+      "experience_score": 20,
+      "confidence_score": 95,
+      "overall_quality_score": 61.8
+    },
+    {
+      "reviewer_id": "~Akshat_Kumar2",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 2,
+      "rating_std": 0,
+      "avg_confidence": 4.75,
+      "avg_text_length": 576,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 31,
+      "experience_score": 20,
+      "confidence_score": 95,
+      "overall_quality_score": 61.5
+    },
+    {
+      "reviewer_id": "~Cédric_Vincent-Cuaz1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 4.33,
+      "avg_text_length": 1064,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 44,
+      "experience_score": 15,
+      "confidence_score": 86.6,
+      "overall_quality_score": 61.4
+    },
+    {
+      "reviewer_id": "~Yuyuan_Liu1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 2,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 576,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 28,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 60.8
+    },
+    {
+      "reviewer_id": "~Matthew_Macfarlane1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 2,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 551,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 27,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 60.5
+    },
+    {
+      "reviewer_id": "~Yong_Xien_Chng1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 5,
+      "avg_rating": 3.6,
+      "rating_std": 0.8,
+      "avg_confidence": 4.6,
+      "avg_text_length": 618,
+      "question_ratio": 1,
+      "consistency_score": 88,
+      "engagement_score": 36,
+      "experience_score": 25,
+      "confidence_score": 92,
+      "overall_quality_score": 60.3
+    },
+    {
+      "reviewer_id": "~Qiuhong_Shen1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 5,
+      "avg_rating": 5.6,
+      "rating_std": 0.8,
+      "avg_confidence": 5,
+      "avg_text_length": 390,
+      "question_ratio": 1,
+      "consistency_score": 88,
+      "engagement_score": 28,
+      "experience_score": 25,
+      "confidence_score": 100,
+      "overall_quality_score": 60.3
+    },
+    {
+      "reviewer_id": "~Kangning_Liu1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 504,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 26,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 60.3
+    },
+    {
+      "reviewer_id": "~Yuqi_Wu2",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 5,
+      "avg_rating": 3.6,
+      "rating_std": 0.8,
+      "avg_confidence": 5,
+      "avg_text_length": 347,
+      "question_ratio": 1,
+      "consistency_score": 88,
+      "engagement_score": 27,
+      "experience_score": 25,
+      "confidence_score": 100,
+      "overall_quality_score": 60
+    },
+    {
+      "reviewer_id": "~Jian_Liu17",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 471,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 25,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 60
+    },
+    {
+      "reviewer_id": "~Siyuan_Li6",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 4.67,
+      "avg_text_length": 666,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 31,
+      "experience_score": 15,
+      "confidence_score": 93.4,
+      "overall_quality_score": 59.9
+    },
+    {
+      "reviewer_id": "~Hao_Chen15",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 2,
+      "rating_std": 0,
+      "avg_confidence": 4.75,
+      "avg_text_length": 358,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 24,
+      "experience_score": 20,
+      "confidence_score": 95,
+      "overall_quality_score": 59.8
+    },
+    {
+      "reviewer_id": "~Siyu_Zhu1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 0.87,
+      "avg_confidence": 5,
+      "avg_text_length": 587,
+      "question_ratio": 1,
+      "consistency_score": 87,
+      "engagement_score": 32,
+      "experience_score": 20,
+      "confidence_score": 100,
+      "overall_quality_score": 59.8
+    },
+    {
+      "reviewer_id": "~Tsai-Shien_Chen1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 0.87,
+      "avg_confidence": 5,
+      "avg_text_length": 590,
+      "question_ratio": 1,
+      "consistency_score": 87,
+      "engagement_score": 32,
+      "experience_score": 20,
+      "confidence_score": 100,
+      "overall_quality_score": 59.8
+    },
+    {
+      "reviewer_id": "~Jiancheng_Huang1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 6,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 210,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 19,
+      "experience_score": 20,
+      "confidence_score": 100,
+      "overall_quality_score": 59.8
+    },
+    {
+      "reviewer_id": "~Dongrui_Liu1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 455,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 24,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 59.8
+    },
+    {
+      "reviewer_id": "~Zhao_WeiQin1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 4.67,
+      "rating_std": 0.94,
+      "avg_confidence": 5,
+      "avg_text_length": 861,
+      "question_ratio": 1,
+      "consistency_score": 85.9,
+      "engagement_score": 38,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 59.7
+    },
+    {
+      "reviewer_id": "~Gengze_Zhou1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 3,
+      "rating_std": 1,
+      "avg_confidence": 4.5,
+      "avg_text_length": 930,
+      "question_ratio": 1,
+      "consistency_score": 85,
+      "engagement_score": 43,
+      "experience_score": 20,
+      "confidence_score": 90,
+      "overall_quality_score": 59.5
+    },
+    {
+      "reviewer_id": "~Chirui_CHANG1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 4.75,
+      "avg_text_length": 336,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 23,
+      "experience_score": 20,
+      "confidence_score": 95,
+      "overall_quality_score": 59.5
+    },
+    {
+      "reviewer_id": "~Yuhang_Li1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 2,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 406,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 23,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 59.5
+    },
+    {
+      "reviewer_id": "~Sonal_Kumar1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 423,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 23,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 59.5
+    },
+    {
+      "reviewer_id": "~Shujian_Zhang1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 428,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 23,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 59.5
+    },
+    {
+      "reviewer_id": "~Zijian_Chen1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 421,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 23,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 59.5
+    },
+    {
+      "reviewer_id": "~Antonio_Emanuele_Cinà1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 2,
+      "rating_std": 0,
+      "avg_confidence": 4.33,
+      "avg_text_length": 804,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 36,
+      "experience_score": 15,
+      "confidence_score": 86.6,
+      "overall_quality_score": 59.4
+    },
+    {
+      "reviewer_id": "~Xiaoqi_Zhao1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 5,
+      "avg_rating": 4.4,
+      "rating_std": 0.8,
+      "avg_confidence": 4.6,
+      "avg_text_length": 514,
+      "question_ratio": 1,
+      "consistency_score": 88,
+      "engagement_score": 32,
+      "experience_score": 25,
+      "confidence_score": 92,
+      "overall_quality_score": 59.3
+    },
+    {
+      "reviewer_id": "~Han_Gao3",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 2,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 140,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 17,
+      "experience_score": 20,
+      "confidence_score": 100,
+      "overall_quality_score": 59.3
+    },
+    {
+      "reviewer_id": "~Cai_Yuanhao1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 6.5,
+      "rating_std": 0.87,
+      "avg_confidence": 5,
+      "avg_text_length": 545,
+      "question_ratio": 1,
+      "consistency_score": 87,
+      "engagement_score": 30,
+      "experience_score": 20,
+      "confidence_score": 100,
+      "overall_quality_score": 59.3
+    },
+    {
+      "reviewer_id": "~Tristan_Tomilin1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 1.66,
+      "avg_confidence": 4.5,
+      "avg_text_length": 1164,
+      "question_ratio": 1,
+      "consistency_score": 75.1,
+      "engagement_score": 51,
+      "experience_score": 20,
+      "confidence_score": 90,
+      "overall_quality_score": 59
+    },
+    {
+      "reviewer_id": "~Fu-Jen_Tsai1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 348,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 21,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 59
+    },
+    {
+      "reviewer_id": "~Leng_DaWei1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 5,
+      "avg_rating": 2.4,
+      "rating_std": 0.8,
+      "avg_confidence": 5,
+      "avg_text_length": 203,
+      "question_ratio": 1,
+      "consistency_score": 88,
+      "engagement_score": 22,
+      "experience_score": 25,
+      "confidence_score": 100,
+      "overall_quality_score": 58.8
+    },
+    {
+      "reviewer_id": "~Xinhe_Wang1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 2,
+      "rating_std": 0,
+      "avg_confidence": 4.25,
+      "avg_text_length": 553,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 30,
+      "experience_score": 20,
+      "confidence_score": 85,
+      "overall_quality_score": 58.8
+    },
+    {
+      "reviewer_id": "~Jiaming_Liu5",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 4,
+      "avg_rating": 7,
+      "rating_std": 1,
+      "avg_confidence": 4.75,
+      "avg_text_length": 676,
+      "question_ratio": 1,
+      "consistency_score": 85,
+      "engagement_score": 35,
+      "experience_score": 20,
+      "confidence_score": 95,
+      "overall_quality_score": 58.8
+    },
+    {
+      "reviewer_id": "~Muxing_Li2",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 336,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 20,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 58.8
+    },
+    {
+      "reviewer_id": "~Hao_LU8",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 322,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 20,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 58.8
+    },
+    {
+      "reviewer_id": "~Khai_Nguyen1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 8,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 339,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 20,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 58.8
+    },
+    {
+      "reviewer_id": "~Kangneng_Zhou1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 5,
+      "avg_rating": 5.2,
+      "rating_std": 0.98,
+      "avg_confidence": 5,
+      "avg_text_length": 277,
+      "question_ratio": 1,
+      "consistency_score": 85.3,
+      "engagement_score": 24,
+      "experience_score": 25,
+      "confidence_score": 100,
+      "overall_quality_score": 58.6
+    },
+    {
+      "reviewer_id": "~Jiahao_Yu1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 2,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 305,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 19,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 58.5
+    },
+    {
+      "reviewer_id": "~Zi_Yang3",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 2,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 294,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 19,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 58.5
+    },
+    {
+      "reviewer_id": "~Jincheng_Zhong1",
+      "reviewer_types": [
+        "active"
+      ],
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 0,
+      "avg_confidence": 5,
+      "avg_text_length": 308,
+      "question_ratio": 1,
+      "consistency_score": 100,
+      "engagement_score": 19,
+      "experience_score": 15,
+      "confidence_score": 100,
+      "overall_quality_score": 58.5
+    }
+  ],
+  "paper_quality_analysis": [
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission2765",
+      "submission_number": 2765,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 3.841,
+      "rating_variance": 14.753281000000001,
+      "rating_range": 10,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission2747",
+      "submission_number": 2747,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 5.33,
+      "rating_std": 3.771,
+      "rating_variance": 14.220441,
+      "rating_range": 8,
+      "avg_confidence": 2.33,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": true,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7533",
+      "submission_number": 7533,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 3.571,
+      "rating_variance": 12.752041000000002,
+      "rating_range": 8,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission2754",
+      "submission_number": 2754,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 4.67,
+      "rating_std": 3.399,
+      "rating_variance": 11.553201,
+      "rating_range": 8,
+      "avg_confidence": 3.67,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7753",
+      "submission_number": 7753,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 3.33,
+      "rating_std": 3.399,
+      "rating_variance": 11.553201,
+      "rating_range": 8,
+      "avg_confidence": 3.67,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission8972",
+      "submission_number": 8972,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 5.33,
+      "rating_std": 3.399,
+      "rating_variance": 11.553201,
+      "rating_range": 8,
+      "avg_confidence": 3,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission389",
+      "submission_number": 389,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5,
+      "rating_std": 3.317,
+      "rating_variance": 11.002489,
+      "rating_range": 8,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4233",
+      "submission_number": 4233,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5,
+      "rating_std": 3.317,
+      "rating_variance": 11.002489,
+      "rating_range": 8,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5251",
+      "submission_number": 5251,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 7,
+      "rating_std": 3.317,
+      "rating_variance": 11.002489,
+      "rating_range": 8,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5740",
+      "submission_number": 5740,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 7,
+      "rating_std": 3.317,
+      "rating_variance": 11.002489,
+      "rating_range": 8,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7498",
+      "submission_number": 7498,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3,
+      "rating_std": 3.317,
+      "rating_variance": 11.002489,
+      "rating_range": 8,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission2805",
+      "submission_number": 2805,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 3.279,
+      "rating_variance": 10.751840999999999,
+      "rating_range": 8,
+      "avg_confidence": 4.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3706",
+      "submission_number": 3706,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 7.5,
+      "rating_std": 3.279,
+      "rating_variance": 10.751840999999999,
+      "rating_range": 8,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6855",
+      "submission_number": 6855,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 3.279,
+      "rating_variance": 10.751840999999999,
+      "rating_range": 8,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9036",
+      "submission_number": 9036,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 3.279,
+      "rating_variance": 10.751840999999999,
+      "rating_range": 8,
+      "avg_confidence": 4.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9402",
+      "submission_number": 9402,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 3.266,
+      "rating_variance": 10.666756,
+      "rating_range": 8,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission901",
+      "submission_number": 901,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4,
+      "rating_std": 3.162,
+      "rating_variance": 9.998244,
+      "rating_range": 8,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1426",
+      "submission_number": 1426,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 6,
+      "rating_std": 3.162,
+      "rating_variance": 9.998244,
+      "rating_range": 8,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission2713",
+      "submission_number": 2713,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4,
+      "rating_std": 3.162,
+      "rating_variance": 9.998244,
+      "rating_range": 8,
+      "avg_confidence": 4.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission8971",
+      "submission_number": 8971,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4,
+      "rating_std": 3.162,
+      "rating_variance": 9.998244,
+      "rating_range": 8,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9166",
+      "submission_number": 9166,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4,
+      "rating_std": 3.162,
+      "rating_variance": 9.998244,
+      "rating_range": 8,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9559",
+      "submission_number": 9559,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 6,
+      "rating_std": 3.162,
+      "rating_variance": 9.998244,
+      "rating_range": 8,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission774",
+      "submission_number": 774,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5,
+      "rating_std": 3,
+      "rating_variance": 9,
+      "rating_range": 8,
+      "avg_confidence": 3,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1087",
+      "submission_number": 1087,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5,
+      "rating_std": 3,
+      "rating_variance": 9,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1297",
+      "submission_number": 1297,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5,
+      "rating_std": 3,
+      "rating_variance": 9,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3311",
+      "submission_number": 3311,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5,
+      "rating_std": 3,
+      "rating_variance": 9,
+      "rating_range": 8,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4092",
+      "submission_number": 4092,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5,
+      "rating_std": 3,
+      "rating_variance": 9,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4900",
+      "submission_number": 4900,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5,
+      "rating_std": 3,
+      "rating_variance": 9,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5556",
+      "submission_number": 5556,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5,
+      "rating_std": 3,
+      "rating_variance": 9,
+      "rating_range": 8,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6128",
+      "submission_number": 6128,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5,
+      "rating_std": 3,
+      "rating_variance": 9,
+      "rating_range": 8,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6208",
+      "submission_number": 6208,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5,
+      "rating_std": 3,
+      "rating_variance": 9,
+      "rating_range": 8,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7578",
+      "submission_number": 7578,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5,
+      "rating_std": 3,
+      "rating_variance": 9,
+      "rating_range": 8,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission8634",
+      "submission_number": 8634,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5,
+      "rating_std": 3,
+      "rating_variance": 9,
+      "rating_range": 8,
+      "avg_confidence": 4.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission83",
+      "submission_number": 83,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.958,
+      "rating_variance": 8.749764,
+      "rating_range": 8,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission929",
+      "submission_number": 929,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.958,
+      "rating_variance": 8.749764,
+      "rating_range": 8,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission2565",
+      "submission_number": 2565,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.958,
+      "rating_variance": 8.749764,
+      "rating_range": 8,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission2622",
+      "submission_number": 2622,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.958,
+      "rating_variance": 8.749764,
+      "rating_range": 8,
+      "avg_confidence": 4.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3468",
+      "submission_number": 3468,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.958,
+      "rating_variance": 8.749764,
+      "rating_range": 8,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3586",
+      "submission_number": 3586,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.958,
+      "rating_variance": 8.749764,
+      "rating_range": 8,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3881",
+      "submission_number": 3881,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.958,
+      "rating_variance": 8.749764,
+      "rating_range": 8,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4000",
+      "submission_number": 4000,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.958,
+      "rating_variance": 8.749764,
+      "rating_range": 8,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4662",
+      "submission_number": 4662,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.958,
+      "rating_variance": 8.749764,
+      "rating_range": 8,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4824",
+      "submission_number": 4824,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.958,
+      "rating_variance": 8.749764,
+      "rating_range": 8,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5526",
+      "submission_number": 5526,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.958,
+      "rating_variance": 8.749764,
+      "rating_range": 8,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7029",
+      "submission_number": 7029,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.958,
+      "rating_variance": 8.749764,
+      "rating_range": 8,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7345",
+      "submission_number": 7345,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.958,
+      "rating_variance": 8.749764,
+      "rating_range": 8,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9055",
+      "submission_number": 9055,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.958,
+      "rating_variance": 8.749764,
+      "rating_range": 8,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9444",
+      "submission_number": 9444,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.958,
+      "rating_variance": 8.749764,
+      "rating_range": 8,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9644",
+      "submission_number": 9644,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.958,
+      "rating_variance": 8.749764,
+      "rating_range": 8,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission360",
+      "submission_number": 360,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission558",
+      "submission_number": 558,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 6,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 8,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission809",
+      "submission_number": 809,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 3.33,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1336",
+      "submission_number": 1336,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 6,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 3.33,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1761",
+      "submission_number": 1761,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 6,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 3.33,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3108",
+      "submission_number": 3108,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3145",
+      "submission_number": 3145,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4655",
+      "submission_number": 4655,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 6,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 8,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4661",
+      "submission_number": 4661,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 6,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 3.67,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4860",
+      "submission_number": 4860,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 3.67,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5140",
+      "submission_number": 5140,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 3.33,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5393",
+      "submission_number": 5393,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 3.67,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5640",
+      "submission_number": 5640,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 6,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 3,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6222",
+      "submission_number": 6222,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 8,
+      "avg_confidence": 2.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": true,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6570",
+      "submission_number": 6570,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 8,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6619",
+      "submission_number": 6619,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 6,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 3.67,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7445",
+      "submission_number": 7445,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 8,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7454",
+      "submission_number": 7454,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 3.67,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7489",
+      "submission_number": 7489,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 6,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 8,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7914",
+      "submission_number": 7914,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 4.33,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7999",
+      "submission_number": 7999,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 2.67,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": true,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission8874",
+      "submission_number": 8874,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 8,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9066",
+      "submission_number": 9066,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 3.67,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9904",
+      "submission_number": 9904,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 4.33,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9947",
+      "submission_number": 9947,
+      "type": "disputed_submissions",
+      "review_count": 5,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 8,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission10170",
+      "submission_number": 10170,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 4,
+      "rating_std": 2.828,
+      "rating_variance": 7.997583999999999,
+      "rating_range": 6,
+      "avg_confidence": 2.67,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": true,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1244",
+      "submission_number": 1244,
+      "type": "disputed_submissions",
+      "review_count": 5,
+      "avg_rating": 4.8,
+      "rating_std": 2.713,
+      "rating_variance": 7.360369,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3298",
+      "submission_number": 3298,
+      "type": "disputed_submissions",
+      "review_count": 5,
+      "avg_rating": 5.2,
+      "rating_std": 2.713,
+      "rating_variance": 7.360369,
+      "rating_range": 6,
+      "avg_confidence": 3.4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5391",
+      "submission_number": 5391,
+      "type": "disputed_submissions",
+      "review_count": 5,
+      "avg_rating": 4.8,
+      "rating_std": 2.713,
+      "rating_variance": 7.360369,
+      "rating_range": 8,
+      "avg_confidence": 4.2,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6453",
+      "submission_number": 6453,
+      "type": "disputed_submissions",
+      "review_count": 5,
+      "avg_rating": 4.8,
+      "rating_std": 2.713,
+      "rating_variance": 7.360369,
+      "rating_range": 6,
+      "avg_confidence": 2.8,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": true,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission8494",
+      "submission_number": 8494,
+      "type": "disputed_submissions",
+      "review_count": 5,
+      "avg_rating": 4.8,
+      "rating_std": 2.713,
+      "rating_variance": 7.360369,
+      "rating_range": 8,
+      "avg_confidence": 3.2,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission10033",
+      "submission_number": 10033,
+      "type": "disputed_submissions",
+      "review_count": 5,
+      "avg_rating": 3.2,
+      "rating_std": 2.713,
+      "rating_variance": 7.360369,
+      "rating_range": 6,
+      "avg_confidence": 3.8,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6045",
+      "submission_number": 6045,
+      "type": "disputed_submissions",
+      "review_count": 6,
+      "avg_rating": 5.67,
+      "rating_std": 2.687,
+      "rating_variance": 7.219968999999999,
+      "rating_range": 6,
+      "avg_confidence": 4.67,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission8557",
+      "submission_number": 8557,
+      "type": "disputed_submissions",
+      "review_count": 6,
+      "avg_rating": 6.33,
+      "rating_std": 2.687,
+      "rating_variance": 7.219968999999999,
+      "rating_range": 8,
+      "avg_confidence": 3.83,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission12",
+      "submission_number": 12,
+      "type": "disputed_submissions",
+      "review_count": 5,
+      "avg_rating": 3.6,
+      "rating_std": 2.653,
+      "rating_variance": 7.038409,
+      "rating_range": 8,
+      "avg_confidence": 3.6,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission104",
+      "submission_number": 104,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission451",
+      "submission_number": 451,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission605",
+      "submission_number": 605,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 6.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission654",
+      "submission_number": 654,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission739",
+      "submission_number": 739,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission826",
+      "submission_number": 826,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission987",
+      "submission_number": 987,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1112",
+      "submission_number": 1112,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1205",
+      "submission_number": 1205,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1484",
+      "submission_number": 1484,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1506",
+      "submission_number": 1506,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1523",
+      "submission_number": 1523,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1605",
+      "submission_number": 1605,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1681",
+      "submission_number": 1681,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1732",
+      "submission_number": 1732,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1742",
+      "submission_number": 1742,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1822",
+      "submission_number": 1822,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1913",
+      "submission_number": 1913,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1932",
+      "submission_number": 1932,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1938",
+      "submission_number": 1938,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission1945",
+      "submission_number": 1945,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission2196",
+      "submission_number": 2196,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission2270",
+      "submission_number": 2270,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 7.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission2551",
+      "submission_number": 2551,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission2638",
+      "submission_number": 2638,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission2677",
+      "submission_number": 2677,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission2980",
+      "submission_number": 2980,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission2995",
+      "submission_number": 2995,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3002",
+      "submission_number": 3002,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3020",
+      "submission_number": 3020,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 6.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3042",
+      "submission_number": 3042,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3099",
+      "submission_number": 3099,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3214",
+      "submission_number": 3214,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3224",
+      "submission_number": 3224,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3225",
+      "submission_number": 3225,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3366",
+      "submission_number": 3366,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3572",
+      "submission_number": 3572,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3609",
+      "submission_number": 3609,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 6.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3806",
+      "submission_number": 3806,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 6.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3809",
+      "submission_number": 3809,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3886",
+      "submission_number": 3886,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4091",
+      "submission_number": 4091,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4215",
+      "submission_number": 4215,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4351",
+      "submission_number": 4351,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4367",
+      "submission_number": 4367,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4445",
+      "submission_number": 4445,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4528",
+      "submission_number": 4528,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4580",
+      "submission_number": 4580,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4605",
+      "submission_number": 4605,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4744",
+      "submission_number": 4744,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4776",
+      "submission_number": 4776,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4954",
+      "submission_number": 4954,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission4961",
+      "submission_number": 4961,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5072",
+      "submission_number": 5072,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 2.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5199",
+      "submission_number": 5199,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5227",
+      "submission_number": 5227,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5275",
+      "submission_number": 5275,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5333",
+      "submission_number": 5333,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5337",
+      "submission_number": 5337,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5577",
+      "submission_number": 5577,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 6.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5708",
+      "submission_number": 5708,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5833",
+      "submission_number": 5833,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission5836",
+      "submission_number": 5836,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6078",
+      "submission_number": 6078,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6233",
+      "submission_number": 6233,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6335",
+      "submission_number": 6335,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6455",
+      "submission_number": 6455,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6595",
+      "submission_number": 6595,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6598",
+      "submission_number": 6598,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6616",
+      "submission_number": 6616,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6758",
+      "submission_number": 6758,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6833",
+      "submission_number": 6833,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6851",
+      "submission_number": 6851,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7005",
+      "submission_number": 7005,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7134",
+      "submission_number": 7134,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7200",
+      "submission_number": 7200,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7425",
+      "submission_number": 7425,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7433",
+      "submission_number": 7433,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7469",
+      "submission_number": 7469,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7488",
+      "submission_number": 7488,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7555",
+      "submission_number": 7555,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 2.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7575",
+      "submission_number": 7575,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7645",
+      "submission_number": 7645,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 6.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 2.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": true,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7711",
+      "submission_number": 7711,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7837",
+      "submission_number": 7837,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 2.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": true,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7921",
+      "submission_number": 7921,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission7977",
+      "submission_number": 7977,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission8074",
+      "submission_number": 8074,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission8091",
+      "submission_number": 8091,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission8138",
+      "submission_number": 8138,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission8467",
+      "submission_number": 8467,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission8709",
+      "submission_number": 8709,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission8797",
+      "submission_number": 8797,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 6.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 2.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": true,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission8856",
+      "submission_number": 8856,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9116",
+      "submission_number": 9116,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9169",
+      "submission_number": 9169,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9373",
+      "submission_number": 9373,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9413",
+      "submission_number": 9413,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 6.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9532",
+      "submission_number": 9532,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9565",
+      "submission_number": 9565,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.75,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9576",
+      "submission_number": 9576,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9643",
+      "submission_number": 9643,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9684",
+      "submission_number": 9684,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9860",
+      "submission_number": 9860,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9933",
+      "submission_number": 9933,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": true
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission9944",
+      "submission_number": 9944,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 6.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.5,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission10038",
+      "submission_number": 10038,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 3.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission10213",
+      "submission_number": 10213,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 5.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission10230",
+      "submission_number": 10230,
+      "type": "disputed_submissions",
+      "review_count": 4,
+      "avg_rating": 4.5,
+      "rating_std": 2.598,
+      "rating_variance": 6.749604,
+      "rating_range": 6,
+      "avg_confidence": 3.25,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission3317",
+      "submission_number": 3317,
+      "type": "disputed_submissions",
+      "review_count": 5,
+      "avg_rating": 6,
+      "rating_std": 2.53,
+      "rating_variance": 6.400899999999999,
+      "rating_range": 6,
+      "avg_confidence": 3.8,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission6363",
+      "submission_number": 6363,
+      "type": "disputed_submissions",
+      "review_count": 5,
+      "avg_rating": 4,
+      "rating_std": 2.53,
+      "rating_variance": 6.400899999999999,
+      "rating_range": 6,
+      "avg_confidence": 3.8,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission8245",
+      "submission_number": 8245,
+      "type": "disputed_submissions",
+      "review_count": 5,
+      "avg_rating": 4,
+      "rating_std": 2.53,
+      "rating_variance": 6.400899999999999,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission619",
+      "submission_number": 619,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 4.67,
+      "rating_std": 2.494,
+      "rating_variance": 6.220036000000001,
+      "rating_range": 6,
+      "avg_confidence": 4,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission740",
+      "submission_number": 740,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 3.33,
+      "rating_std": 2.494,
+      "rating_variance": 6.220036000000001,
+      "rating_range": 6,
+      "avg_confidence": 3,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission874",
+      "submission_number": 874,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 5.33,
+      "rating_std": 2.494,
+      "rating_variance": 6.220036000000001,
+      "rating_range": 6,
+      "avg_confidence": 3.67,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    },
+    {
+      "submission_id": "ICLR.cc/2026/Conference/Submission903",
+      "submission_number": 903,
+      "type": "disputed_submissions",
+      "review_count": 3,
+      "avg_rating": 6.67,
+      "rating_std": 2.494,
+      "rating_variance": 6.220036000000001,
+      "rating_range": 6,
+      "avg_confidence": 3,
+      "quality_indicators": {
+        "high_disagreement": true,
+        "wide_range": true,
+        "low_confidence": false,
+        "high_agreement": false,
+        "narrow_range": false,
+        "high_confidence": false
+      }
+    }
+  ],
+  "system_health_metrics": {
+    "reviewer_diversity": {
+      "total_unique_reviewers": 15903,
+      "active_reviewers": 3983,
+      "expert_reviewers": 213
+    },
+    "quality_distribution": {
+      "high_quality_reviewers": 21,
+      "medium_quality_reviewers": 3913,
+      "improvement_needed_reviewers": 49
+    },
+    "review_consistency": {
+      "highly_consistent_papers": 2902,
+      "disputed_papers": 849,
+      "consistency_ratio": "37.91"
+    }
+  },
+  "regional_quality_comparison": [],
+  "metadata": {
+    "analysis_timestamp": "2025-12-14T04:37:11.415Z",
+    "data_source": "generated_from_json",
+    "data_quality": "Comprehensive analysis based on local review data"
+  }
+}

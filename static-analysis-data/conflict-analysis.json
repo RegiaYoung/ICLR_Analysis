@@ -1,1 +1,2132 @@
-{"conflict_overview":{"total_submissions":10090,"submissions_with_conflicts":7,"total_conflict_instances":10,"conflict_rate":0.07,"unique_institutions_involved":5,"unique_reviewers_involved":6},"institution_conflict_ranking":[{"institution_name":"Shanghai Artificial Intelligence Laboratory","country":"China","institution_type":"Company","total_conflicts":6,"affected_submissions":3,"involved_authors":5,"involved_reviewers":2,"total_rating":18,"rating_count":3,"avg_rating":6,"conflict_severity":"High"},{"institution_name":"Institute of automation, Chinese academy of science, Chinese Academy of Sciences","country":"China","institution_type":"University","total_conflicts":1,"affected_submissions":1,"involved_authors":1,"involved_reviewers":1,"total_rating":6,"rating_count":1,"avg_rating":6,"conflict_severity":"Low"},{"institution_name":"University of Cambridge","country":"United Kingdom","institution_type":"University","total_conflicts":1,"affected_submissions":1,"involved_authors":1,"involved_reviewers":1,"total_rating":4,"rating_count":1,"avg_rating":4,"conflict_severity":"Low"},{"institution_name":"National University of Singapore","country":"Singapore","institution_type":"University","total_conflicts":1,"affected_submissions":1,"involved_authors":1,"involved_reviewers":1,"total_rating":6,"rating_count":1,"avg_rating":6,"conflict_severity":"Low"},{"institution_name":"University of Hong Kong","country":"China","institution_type":"University","total_conflicts":1,"affected_submissions":1,"involved_authors":1,"involved_reviewers":1,"total_rating":4,"rating_count":1,"avg_rating":4,"conflict_severity":"Low"}],"conflict_type_analysis":[{"conflict_type":"Same Institution (Author-Reviewer)","count":10,"percentage":100,"severity":"High","description":"Conflicts where authors and reviewers share the same institutional affiliation"}],"affected_submission_analysis":[{"submission_id":"ICLR.cc/2026/Conference/Submission2087","submission_number":2087,"conflict_count":3,"institutions_involved":["Shanghai Artificial Intelligence Laboratory"],"severity_score":30,"total_conflict_pairs":3},{"submission_id":"ICLR.cc/2026/Conference/Submission364","submission_number":364,"conflict_count":2,"institutions_involved":["Shanghai Artificial Intelligence Laboratory"],"severity_score":20,"total_conflict_pairs":2},{"submission_id":"ICLR.cc/2026/Conference/Submission391","submission_number":391,"conflict_count":1,"institutions_involved":["Shanghai Artificial Intelligence Laboratory"],"severity_score":10,"total_conflict_pairs":1},{"submission_id":"ICLR.cc/2026/Conference/Submission456","submission_number":456,"conflict_count":1,"institutions_involved":["Institute of automation, Chinese academy of science, Chinese Academy of Sciences"],"severity_score":10,"total_conflict_pairs":1},{"submission_id":"ICLR.cc/2026/Conference/Submission1611","submission_number":1611,"conflict_count":1,"institutions_involved":["University of Cambridge"],"severity_score":10,"total_conflict_pairs":1},{"submission_id":"ICLR.cc/2026/Conference/Submission9777","submission_number":9777,"conflict_count":1,"institutions_involved":["National University of Singapore"],"severity_score":10,"total_conflict_pairs":1},{"submission_id":"ICLR.cc/2026/Conference/Submission10012","submission_number":10012,"conflict_count":1,"institutions_involved":["University of Hong Kong"],"severity_score":10,"total_conflict_pairs":1}],"reviewer_involvement_analysis":[{"reviewer_id":"~ZiYang_Gong1","reviewer_name":"ZiYang Gong","conflict_count":3,"institutions_involved":1,"submissions_involved":2,"risk_level":"Medium"},{"reviewer_id":"~Baichuan_Zhou1","reviewer_name":"Baichuan Zhou","conflict_count":3,"institutions_involved":1,"submissions_involved":1,"risk_level":"Medium"},{"reviewer_id":"~Hao_Ge_Deng1","reviewer_name":"Hao Ge Deng","conflict_count":1,"institutions_involved":1,"submissions_involved":1,"risk_level":"Low"},{"reviewer_id":"~Fei_Xue4","reviewer_name":"Fei Xue","conflict_count":1,"institutions_involved":1,"submissions_involved":1,"risk_level":"Low"},{"reviewer_id":"~Jusheng_Zhang3","reviewer_name":"Jusheng Zhang","conflict_count":1,"institutions_involved":1,"submissions_involved":1,"risk_level":"Low"},{"reviewer_id":"~Dunjie_Lu1","reviewer_name":"Dunjie Lu","conflict_count":1,"institutions_involved":1,"submissions_involved":1,"risk_level":"Low"}],"data_source":"local_review_data","metadata":{"analysis_timestamp":"2025-11-29T23:31:15.152Z","data_quality":"Analysis based on preprocessed conflict data","total_submissions_analyzed":10090,"conflict_detection_method":"Institution-based matching from same_institution_conflicts.json","conflicts_detected":10}}
+{
+  "conflict_overview": {
+    "total_submissions": 7655,
+    "submissions_with_conflicts": 93,
+    "total_conflict_instances": 103,
+    "conflict_rate": 1.21
+  },
+  "institution_conflict_ranking": [
+    {
+      "institution_name": "Chinese Academy of Sciences",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 32,
+      "affected_submissions": 27,
+      "involved_authors": 0,
+      "involved_reviewers": 28,
+      "conflict_severity": "High"
+    },
+    {
+      "institution_name": "Hong Kong University of Science and Technology",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 8,
+      "affected_submissions": 8,
+      "involved_authors": 0,
+      "involved_reviewers": 8,
+      "conflict_severity": "High"
+    },
+    {
+      "institution_name": "Tsinghua University",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 7,
+      "affected_submissions": 7,
+      "involved_authors": 0,
+      "involved_reviewers": 7,
+      "conflict_severity": "High"
+    },
+    {
+      "institution_name": "ByteDance",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 4,
+      "affected_submissions": 4,
+      "involved_authors": 0,
+      "involved_reviewers": 4,
+      "conflict_severity": "High"
+    },
+    {
+      "institution_name": "Nanjing University",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 4,
+      "affected_submissions": 4,
+      "involved_authors": 0,
+      "involved_reviewers": 4,
+      "conflict_severity": "High"
+    },
+    {
+      "institution_name": "Shanghai Artificial Intelligence Laboratory",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 3,
+      "affected_submissions": 3,
+      "involved_authors": 0,
+      "involved_reviewers": 2,
+      "conflict_severity": "High"
+    },
+    {
+      "institution_name": "National University of Singapore",
+      "country": "Singapore",
+      "institution_type": "Unknown",
+      "total_conflicts": 3,
+      "affected_submissions": 2,
+      "involved_authors": 0,
+      "involved_reviewers": 3,
+      "conflict_severity": "High"
+    },
+    {
+      "institution_name": "University of California",
+      "country": "United States",
+      "institution_type": "Unknown",
+      "total_conflicts": 3,
+      "affected_submissions": 3,
+      "involved_authors": 0,
+      "involved_reviewers": 3,
+      "conflict_severity": "High"
+    },
+    {
+      "institution_name": "Ant Group",
+      "country": "United States",
+      "institution_type": "Unknown",
+      "total_conflicts": 2,
+      "affected_submissions": 2,
+      "involved_authors": 0,
+      "involved_reviewers": 2,
+      "conflict_severity": "Medium"
+    },
+    {
+      "institution_name": "Beihang University",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 2,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 2,
+      "conflict_severity": "Medium"
+    },
+    {
+      "institution_name": "The Chinese University of Hong Kong",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 2,
+      "affected_submissions": 2,
+      "involved_authors": 0,
+      "involved_reviewers": 2,
+      "conflict_severity": "Medium"
+    },
+    {
+      "institution_name": "NVIDIA",
+      "country": "Canada",
+      "institution_type": "Unknown",
+      "total_conflicts": 2,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 2,
+      "conflict_severity": "Medium"
+    },
+    {
+      "institution_name": "Carnegie Mellon University",
+      "country": "United States",
+      "institution_type": "Unknown",
+      "total_conflicts": 2,
+      "affected_submissions": 2,
+      "involved_authors": 0,
+      "involved_reviewers": 2,
+      "conflict_severity": "Medium"
+    },
+    {
+      "institution_name": "Alibaba Group",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 2,
+      "affected_submissions": 2,
+      "involved_authors": 0,
+      "involved_reviewers": 2,
+      "conflict_severity": "Medium"
+    },
+    {
+      "institution_name": "Nankai University",
+      "country": "TD",
+      "institution_type": "Unknown",
+      "total_conflicts": 2,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 2,
+      "conflict_severity": "Medium"
+    },
+    {
+      "institution_name": "Peking University",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 2,
+      "affected_submissions": 2,
+      "involved_authors": 0,
+      "involved_reviewers": 2,
+      "conflict_severity": "Medium"
+    },
+    {
+      "institution_name": "Johns Hopkins University",
+      "country": "United States",
+      "institution_type": "Unknown",
+      "total_conflicts": 2,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 2,
+      "conflict_severity": "Medium"
+    },
+    {
+      "institution_name": "Southern University of Science and Technology",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "University of Cambridge",
+      "country": "GB",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "Zhejiang University",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "Adobe",
+      "country": "United States",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "University of Macau",
+      "country": "MO",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "Horizon Robotics",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "Inc.",
+      "country": "Japan",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "Technical University of Munich",
+      "country": "United States",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "Microsoft",
+      "country": "United States",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "Sun Yat-sen University",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "College Park",
+      "country": "United States",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "University of Alberta",
+      "country": "Canada",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "Harbin Institute of Technology",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "Seoul National University",
+      "country": "South Korea",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "Shanghai Jiao Tong University",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "University of California, Berkeley",
+      "country": "United States",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "University of Illinois Urbana-Champaign",
+      "country": "United States",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "Meta",
+      "country": "GB",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "Tencent",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "Stanford University",
+      "country": "United States",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    },
+    {
+      "institution_name": "University of Hong Kong",
+      "country": "China",
+      "institution_type": "Unknown",
+      "total_conflicts": 1,
+      "affected_submissions": 1,
+      "involved_authors": 0,
+      "involved_reviewers": 1,
+      "conflict_severity": "Low"
+    }
+  ],
+  "conflict_type_analysis": [
+    {
+      "conflict_type": "Same Institution (Author-Reviewer)",
+      "count": 103,
+      "percentage": 100,
+      "severity": "High",
+      "description": "Author and reviewer share institution."
+    },
+    {
+      "conflict_type": "Author is also Reviewer",
+      "count": 0,
+      "percentage": 0,
+      "severity": "Low",
+      "description": "Reviewer ID also appears in authors of the same submission."
+    }
+  ],
+  "affected_submission_analysis": [
+    {
+      "submission_id": null,
+      "submission_number": 44,
+      "conflict_count": 2,
+      "total_conflict_pairs": 2,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 2
+    },
+    {
+      "submission_id": null,
+      "submission_number": 148,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 206,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Ant Group"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 219,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 226,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 241,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 324,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "ByteDance"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 364,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Shanghai Artificial Intelligence Laboratory"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 391,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Shanghai Artificial Intelligence Laboratory"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 431,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Hong Kong University of Science and Technology"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 456,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 545,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Nanjing University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 971,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 1221,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 1251,
+      "conflict_count": 2,
+      "total_conflict_pairs": 2,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 2
+    },
+    {
+      "submission_id": null,
+      "submission_number": 1397,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Southern University of Science and Technology"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 1547,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 1551,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Hong Kong University of Science and Technology"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 1611,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "University of Cambridge"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 1680,
+      "conflict_count": 2,
+      "total_conflict_pairs": 2,
+      "institutions_involved": [
+        "Beihang University"
+      ],
+      "severity_score": 2
+    },
+    {
+      "submission_id": null,
+      "submission_number": 1721,
+      "conflict_count": 2,
+      "total_conflict_pairs": 2,
+      "institutions_involved": [
+        "National University of Singapore"
+      ],
+      "severity_score": 2
+    },
+    {
+      "submission_id": null,
+      "submission_number": 1874,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 1909,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "ByteDance"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 2040,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Tsinghua University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 2087,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Shanghai Artificial Intelligence Laboratory"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 2181,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "University of California"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 2301,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "The Chinese University of Hong Kong"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 2309,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Hong Kong University of Science and Technology"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 2325,
+      "conflict_count": 3,
+      "total_conflict_pairs": 3,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 3
+    },
+    {
+      "submission_id": null,
+      "submission_number": 2342,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Zhejiang University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 2543,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Adobe"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 2606,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Tsinghua University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 2612,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "ByteDance"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 2826,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 2877,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Nanjing University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 2932,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "University of Macau"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 3034,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Hong Kong University of Science and Technology"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 3058,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Horizon Robotics"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 3235,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Nanjing University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 3245,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Nanjing University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 3580,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 3623,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Tsinghua University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 3799,
+      "conflict_count": 2,
+      "total_conflict_pairs": 2,
+      "institutions_involved": [
+        "NVIDIA"
+      ],
+      "severity_score": 2
+    },
+    {
+      "submission_id": null,
+      "submission_number": 3849,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 3876,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 3966,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Inc."
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 4171,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Carnegie Mellon University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 4277,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 4388,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Technical University of Munich"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 4881,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "University of California"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 4882,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Microsoft"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 5035,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Hong Kong University of Science and Technology"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 5208,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Hong Kong University of Science and Technology"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 5342,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 5458,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 5459,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Alibaba Group"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 5518,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Hong Kong University of Science and Technology"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 5535,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Sun Yat-sen University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 5644,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 5740,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Ant Group"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 5793,
+      "conflict_count": 2,
+      "total_conflict_pairs": 2,
+      "institutions_involved": [
+        "Nankai University"
+      ],
+      "severity_score": 2
+    },
+    {
+      "submission_id": null,
+      "submission_number": 5821,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Alibaba Group"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 5857,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 6021,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 6077,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "College Park"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 6185,
+      "conflict_count": 2,
+      "total_conflict_pairs": 2,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 2
+    },
+    {
+      "submission_id": null,
+      "submission_number": 6247,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "University of Alberta"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 6310,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "ByteDance"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 6547,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Harbin Institute of Technology"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 6831,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Seoul National University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 6960,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Tsinghua University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 7006,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Shanghai Jiao Tong University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 7227,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 7360,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "University of California, Berkeley"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 7736,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 7852,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Hong Kong University of Science and Technology"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 8236,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "University of Illinois Urbana-Champaign"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 8462,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "The Chinese University of Hong Kong"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 8672,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "University of California"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 8811,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Carnegie Mellon University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 8916,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Peking University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 8989,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Peking University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 9237,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Tsinghua University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 9373,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 9394,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Meta"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 9431,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Tsinghua University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 9562,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Tencent"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 9777,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "National University of Singapore"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 9794,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Stanford University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 9848,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Tsinghua University"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 9866,
+      "conflict_count": 2,
+      "total_conflict_pairs": 2,
+      "institutions_involved": [
+        "Johns Hopkins University"
+      ],
+      "severity_score": 2
+    },
+    {
+      "submission_id": null,
+      "submission_number": 10012,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "University of Hong Kong"
+      ],
+      "severity_score": 1
+    },
+    {
+      "submission_id": null,
+      "submission_number": 10080,
+      "conflict_count": 1,
+      "total_conflict_pairs": 1,
+      "institutions_involved": [
+        "Chinese Academy of Sciences"
+      ],
+      "severity_score": 1
+    }
+  ],
+  "reviewer_involvement_analysis": [
+    {
+      "reviewer_id": "~Kunchang_Li1",
+      "reviewer_name": "~Kunchang_Li1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Yali_Wang1",
+      "reviewer_name": "~Yali_Wang1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Qiang_Liu8",
+      "reviewer_name": "~Qiang_Liu8",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Ming_Yang2",
+      "reviewer_name": "~Ming_Yang2",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Wenxuan_Wang3",
+      "reviewer_name": "~Wenxuan_Wang3",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Yan_Huang2",
+      "reviewer_name": "~Yan_Huang2",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Biswadeep_Chakraborty1",
+      "reviewer_name": "~Biswadeep_Chakraborty1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Haopeng_Li1",
+      "reviewer_name": "~Haopeng_Li1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~ZiYang_Gong1",
+      "reviewer_name": "~ZiYang_Gong1",
+      "conflict_count": 2,
+      "institutions_involved": 1,
+      "submissions_involved": 2,
+      "risk_level": "Medium"
+    },
+    {
+      "reviewer_id": "~Zhengpeng_Xie1",
+      "reviewer_name": "~Zhengpeng_Xie1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Hao_Ge_Deng1",
+      "reviewer_name": "~Hao_Ge_Deng1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Zhenshan_Bing1",
+      "reviewer_name": "~Zhenshan_Bing1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Guosheng_Zhao1",
+      "reviewer_name": "~Guosheng_Zhao1",
+      "conflict_count": 3,
+      "institutions_involved": 1,
+      "submissions_involved": 3,
+      "risk_level": "High"
+    },
+    {
+      "reviewer_id": "~Jinqiao_Wang1",
+      "reviewer_name": "~Jinqiao_Wang1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Yuzhong_Zhao1",
+      "reviewer_name": "~Yuzhong_Zhao1",
+      "conflict_count": 2,
+      "institutions_involved": 1,
+      "submissions_involved": 2,
+      "risk_level": "Medium"
+    },
+    {
+      "reviewer_id": "~Yunfan_Liu1",
+      "reviewer_name": "~Yunfan_Liu1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Fu_Luo1",
+      "reviewer_name": "~Fu_Luo1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Ruoyu_Chen2",
+      "reviewer_name": "~Ruoyu_Chen2",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Jian_Liu17",
+      "reviewer_name": "~Jian_Liu17",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Fei_Xue4",
+      "reviewer_name": "~Fei_Xue4",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Ziqin_Wang2",
+      "reviewer_name": "~Ziqin_Wang2",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Hohin_Kwan1",
+      "reviewer_name": "~Hohin_Kwan1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Ziteng_Gao1",
+      "reviewer_name": "~Ziteng_Gao1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Zechen_Bai1",
+      "reviewer_name": "~Zechen_Bai1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Shijie_Ma1",
+      "reviewer_name": "~Shijie_Ma1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Xin_Yan3",
+      "reviewer_name": "~Xin_Yan3",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Yizhe_Xiong1",
+      "reviewer_name": "~Yizhe_Xiong1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Baichuan_Zhou1",
+      "reviewer_name": "~Baichuan_Zhou1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Diji_Yang1",
+      "reviewer_name": "~Diji_Yang1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Jiacheng_Chen4",
+      "reviewer_name": "~Jiacheng_Chen4",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Xiao_Zhu4",
+      "reviewer_name": "~Xiao_Zhu4",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Xueruwen1",
+      "reviewer_name": "~Xueruwen1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Xianpei_Han1",
+      "reviewer_name": "~Xianpei_Han1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Yaojie_Lu1",
+      "reviewer_name": "~Yaojie_Lu1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Mingxuan_Xia1",
+      "reviewer_name": "~Mingxuan_Xia1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Haoran_You1",
+      "reviewer_name": "~Haoran_You1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Huanran_Chen1",
+      "reviewer_name": "~Huanran_Chen1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Li_Yi4",
+      "reviewer_name": "~Li_Yi4",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Yilong_Xu2",
+      "reviewer_name": "~Yilong_Xu2",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Jun_Li16",
+      "reviewer_name": "~Jun_Li16",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Shu_Kong1",
+      "reviewer_name": "~Shu_Kong1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Wenshuo_chen2",
+      "reviewer_name": "~Wenshuo_chen2",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Wenchao_Sun1",
+      "reviewer_name": "~Wenchao_Sun1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Yiming_Wang4",
+      "reviewer_name": "~Yiming_Wang4",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Wenbin_Li5",
+      "reviewer_name": "~Wenbin_Li5",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Bin_Fu1",
+      "reviewer_name": "~Bin_Fu1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Tao_Feng3",
+      "reviewer_name": "~Tao_Feng3",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Karsten_Kreis1",
+      "reviewer_name": "~Karsten_Kreis1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Tomas_Geffner1",
+      "reviewer_name": "~Tomas_Geffner1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Dailing_Zhang2",
+      "reviewer_name": "~Dailing_Zhang2",
+      "conflict_count": 2,
+      "institutions_involved": 1,
+      "submissions_involved": 2,
+      "risk_level": "Medium"
+    },
+    {
+      "reviewer_id": "~Tetsuro_Morimura1",
+      "reviewer_name": "~Tetsuro_Morimura1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Junhong_Shen1",
+      "reviewer_name": "~Junhong_Shen1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Qiaoyu_Tang1",
+      "reviewer_name": "~Qiaoyu_Tang1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Shorya_Consul1",
+      "reviewer_name": "~Shorya_Consul1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Hadi_Askari1",
+      "reviewer_name": "~Hadi_Askari1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Jihoon_Tack1",
+      "reviewer_name": "~Jihoon_Tack1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~jiantaoLin1",
+      "reviewer_name": "~jiantaoLin1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Rui_Min1",
+      "reviewer_name": "~Rui_Min1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Lue_Fan1",
+      "reviewer_name": "~Lue_Fan1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Jiancheng_Huang1",
+      "reviewer_name": "~Jiancheng_Huang1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Guiyang_Hou1",
+      "reviewer_name": "~Guiyang_Hou1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Jinliang_Deng1",
+      "reviewer_name": "~Jinliang_Deng1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Yuying_Chen2",
+      "reviewer_name": "~Yuying_Chen2",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Chaochen_Gao1",
+      "reviewer_name": "~Chaochen_Gao1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Deyuan_Liu1",
+      "reviewer_name": "~Deyuan_Liu1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Senmao_Li2",
+      "reviewer_name": "~Senmao_Li2",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~jian_Yang14",
+      "reviewer_name": "~jian_Yang14",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~robotx1",
+      "reviewer_name": "~robotx1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Yuancheng_Xu1",
+      "reviewer_name": "~Yuancheng_Xu1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Qitai_Wang1",
+      "reviewer_name": "~Qitai_Wang1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Xi_Ye2",
+      "reviewer_name": "~Xi_Ye2",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~正雄_罗1",
+      "reviewer_name": "~正雄_罗1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Xinyang_Chen1",
+      "reviewer_name": "~Xinyang_Chen1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~HyunGi_Kim1",
+      "reviewer_name": "~HyunGi_Kim1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Yida_Lu1",
+      "reviewer_name": "~Yida_Lu1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Yuzhe_Gu1",
+      "reviewer_name": "~Yuzhe_Gu1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Libo_Zhang1",
+      "reviewer_name": "~Libo_Zhang1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Yaowen_Ye1",
+      "reviewer_name": "~Yaowen_Ye1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Shiwen_Ni1",
+      "reviewer_name": "~Shiwen_Ni1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Boyan_Li2",
+      "reviewer_name": "~Boyan_Li2",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Ruida_WANG1",
+      "reviewer_name": "~Ruida_WANG1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Qihang_Zhang1",
+      "reviewer_name": "~Qihang_Zhang1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Dmitrii_Krylov1",
+      "reviewer_name": "~Dmitrii_Krylov1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Wentao_Shi1",
+      "reviewer_name": "~Wentao_Shi1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Kechi_Zhang1",
+      "reviewer_name": "~Kechi_Zhang1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Churan_Wang1",
+      "reviewer_name": "~Churan_Wang1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~ye_yuan4",
+      "reviewer_name": "~ye_yuan4",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Xuange_Gao1",
+      "reviewer_name": "~Xuange_Gao1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Yufan_Ren1",
+      "reviewer_name": "~Yufan_Ren1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Kent_Selwyn_The1",
+      "reviewer_name": "~Kent_Selwyn_The1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Xiaoyuan_Liu6",
+      "reviewer_name": "~Xiaoyuan_Liu6",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Jusheng_Zhang3",
+      "reviewer_name": "~Jusheng_Zhang3",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Konstantin_Friedrich_Willeke1",
+      "reviewer_name": "~Konstantin_Friedrich_Willeke1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Jianhui_Wang2",
+      "reviewer_name": "~Jianhui_Wang2",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Qingying_Gao1",
+      "reviewer_name": "~Qingying_Gao1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Hokin_Deng2",
+      "reviewer_name": "~Hokin_Deng2",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Dunjie_Lu1",
+      "reviewer_name": "~Dunjie_Lu1",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    },
+    {
+      "reviewer_id": "~Zongyang_Ma3",
+      "reviewer_name": "~Zongyang_Ma3",
+      "conflict_count": 1,
+      "institutions_involved": 1,
+      "submissions_involved": 1,
+      "risk_level": "Low"
+    }
+  ],
+  "data_source": "generated_from_json",
+  "metadata": {
+    "analysis_timestamp": "2025-12-14T04:37:11.389Z",
+    "data_quality": "Analysis based on institution overlap and author-reviewer identity",
+    "total_submissions_analyzed": 7655,
+    "conflict_detection_method": "Institution based overlap with reviewer/author roles",
+    "conflicts_detected": 103
+  }
+}

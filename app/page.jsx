@@ -532,7 +532,7 @@ export default function Home() {
                     <div className="section-title">{lang === 'zh' ? '高质量审稿人' : 'High Quality Reviewers'}</div>
                     <div className="stat">
                       <div className="value">{fmtInt(qualityAnalysis.system_health_metrics?.quality_distribution?.high_quality_reviewers)}</div>
-                      <div className="hint">{lang === 'zh' ? '综合质量80+的审稿人' : 'Reviewers with quality score ≥ 80'}</div>
+                      <div className="hint">{lang === 'zh' ? '综合质量60+的审稿人' : 'Reviewers with quality score ≥ 60'}</div>
                     </div>
                   </div>
                   <div className="card">
@@ -932,7 +932,7 @@ export default function Home() {
                     <div className="section-title">{lang === 'zh' ? '高质量审稿人' : 'High Quality Reviewers'}</div>
                     <div className="stat">
                       <div className="value">{fmtInt(qualityAnalysis.system_health_metrics?.quality_distribution?.high_quality_reviewers)}</div>
-                      <div className="hint">{lang === 'zh' ? '综合质量80+的审稿人' : 'Reviewers with quality score ≥ 80'}</div>
+                      <div className="hint">{lang === 'zh' ? '综合质量60+的审稿人' : 'Reviewers with quality score ≥ 60'}</div>
                     </div>
                   </div>
                   <div className="card">

@@ -510,8 +510,8 @@ function buildQualityAnalysis(submissionStats, reviewerList) {
     (acc, reviewer) => {
       const { overall_quality_score } = computeQualityScores(reviewer);
       if ((reviewer.review_count || 0) < 3) return acc;
-      if (overall_quality_score >= 80) acc.high_quality_reviewers += 1;
-      else if (overall_quality_score >= 60) acc.medium_quality_reviewers += 1;
+      if (overall_quality_score >= 60) acc.high_quality_reviewers += 1;
+      else if (overall_quality_score >= 40) acc.medium_quality_reviewers += 1;
       else acc.improvement_needed_reviewers += 1;
       return acc;
     },
