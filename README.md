@@ -119,9 +119,9 @@ A comprehensive platform for analyzing peer review data from the International C
    npm run init-db
    ```
 
-5. **Import data** (if you have ICLR review data)
+5. **Import data** (after preparing JSON with the enrichment scripts)
    ```bash
-   npm run migrate-json
+   npm run migrate-json-final
    ```
 
 6. **Start the development server**
