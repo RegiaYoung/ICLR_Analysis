@@ -28,6 +28,16 @@ async function batchInsert(client, query, data, batchSize = 1000) {
   }
 }
 
+function wordCount(text) {
+  if (!text) return 0;
+  return String(text).trim().split(/\s+/).filter(Boolean).length;
+}
+
+function calculateTextLength(review) {
+  const { summary, strengths, weaknesses, questions } = review.content || {};
+  return wordCount(summary) + wordCount(strengths) + wordCount(weaknesses) + wordCount(questions);
+}
+
 async function main() {
   const client = await pool.connect();
   try {
@@ -36,7 +46,7 @@ async function main() {
     // 1. Drop old tables & Create new ones matching Search API requirements
     console.log('🏗️  Creating tables...');
     await client.query(`
-      DROP TABLE IF EXISTS review_details, submission_statistics, submission_authors, people, reviewers CASCADE;
+      DROP TABLE IF EXISTS reviewer_statistics, review_details, submission_statistics, submission_authors, people, reviewers CASCADE;
 
       -- People Table (Authors & Reviewers)
       CREATE TABLE people (
@@ -45,6 +55,7 @@ async function main() {
         name VARCHAR(255),
         nationality VARCHAR(100),
         institution VARCHAR(500),
+        institution_type VARCHAR(100),
         gender VARCHAR(50),
         role VARCHAR(100)
       );
@@ -94,27 +105,54 @@ async function main() {
         avg_confidence DECIMAL(4,2)
       );
 
+      CREATE TABLE reviewer_statistics (
+        reviewer_id VARCHAR(255) PRIMARY KEY,
+        review_count INTEGER DEFAULT 0,
+        avg_rating DECIMAL(4,2),
+        rating_std DECIMAL(5,3),
+        avg_confidence DECIMAL(4,2),
+        avg_text_length INTEGER,
+        question_ratio DECIMAL(5,3),
+        institution JSONB
+      );
+
       CREATE INDEX idx_review_details_sub_num ON review_details(submission_number);
       CREATE INDEX idx_submission_authors_sub_num ON submission_authors(submission_number);
       CREATE INDEX idx_people_person_id ON people(person_id);
+      CREATE INDEX idx_reviewer_stats_review_count ON reviewer_statistics(review_count);
     `);
 
     // 2. Import People
     console.log('👥 Importing People...');
     const peopleData = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'review-data', 'people.json'), 'utf8'));
-    
-    // Fix: Ensure we get ID from key
-    const peopleRows = Object.entries(peopleData.people).map(([id, p]) => [
-      id,
-      p.name,
-      p.nationality,
-      p.institution,
-      p.gender || 'Unknown',
-      p.role
-    ]);
 
-    await batchInsert(client, 
-      `INSERT INTO people (person_id, name, nationality, institution, gender, role) VALUES `, 
+    // Map for quick lookup when enriching reviewer statistics
+    const personInstitutionMap = {};
+
+    // Fix: Ensure we get ID from key
+    const peopleRows = Object.entries(peopleData.people).map(([id, p]) => {
+      const institutionType = (() => {
+        if (p.institution_type) return p.institution_type;
+        if (p.institution && typeof p.institution === 'object' && p.institution.type) return p.institution.type;
+        if (Array.isArray(p.institution) && p.institution.length && p.institution[0].type) return p.institution[0].type;
+        return 'Unknown';
+      })();
+
+      personInstitutionMap[id] = p.institution || null;
+
+      return [
+        id,
+        p.name,
+        p.nationality,
+        p.institution,
+        institutionType,
+        p.gender || 'Unknown',
+        p.role
+      ];
+    });
+
+    await batchInsert(client,
+      `INSERT INTO people (person_id, name, nationality, institution, institution_type, gender, role) VALUES `,
       peopleRows, 3000
     );
 
@@ -187,10 +225,20 @@ async function main() {
         ]);
 
         // Reviewer Stats Accumulation
-        if (!reviewerStatsMap[rid]) reviewerStatsMap[rid] = { count: 0, sumRating: 0, sumConf: 0 };
+        if (!reviewerStatsMap[rid]) {
+          reviewerStatsMap[rid] = {
+            count: 0,
+            ratings: [],
+            confidences: [],
+            textLengthSum: 0,
+            questionCount: 0
+          };
+        }
         reviewerStatsMap[rid].count++;
-        reviewerStatsMap[rid].sumRating += (r.rating || 0);
-        reviewerStatsMap[rid].sumConf += (r.confidence || 0);
+        if (typeof r.rating === 'number') reviewerStatsMap[rid].ratings.push(r.rating);
+        if (typeof r.confidence === 'number') reviewerStatsMap[rid].confidences.push(r.confidence);
+        reviewerStatsMap[rid].textLengthSum += calculateTextLength(r);
+        if (r.content?.questions) reviewerStatsMap[rid].questionCount++;
       });
     });
 
@@ -221,17 +269,58 @@ async function main() {
 
     // 4. Import Reviewer Stats
     console.log('📊 Importing Reviewer Stats...');
-    const reviewerStatsRows = Object.entries(reviewerStatsMap).map(([rid, stats]) => [
-      rid,
-      stats.count,
-      stats.count ? stats.sumRating / stats.count : 0,
-      stats.count ? stats.sumConf / stats.count : 0
-    ]);
+    const reviewerStatsRows = Object.entries(reviewerStatsMap).map(([rid, stats]) => {
+      const avgRating = stats.ratings.length ? stats.ratings.reduce((a, b) => a + b, 0) / stats.ratings.length : 0;
+      const avgConfidence = stats.confidences.length ? stats.confidences.reduce((a, b) => a + b, 0) / stats.confidences.length : 0;
+      const ratingStd = stats.ratings.length
+        ? Math.sqrt(stats.ratings.map(r => Math.pow(r - avgRating, 2)).reduce((a, b) => a + b, 0) / stats.ratings.length)
+        : 0;
+      const avgTextLength = stats.count ? Math.round(stats.textLengthSum / stats.count) : 0;
+      const questionRatio = stats.count ? stats.questionCount / stats.count : 0;
 
-    await batchInsert(client, 
-      `INSERT INTO reviewers (reviewer_id, reviews, avg_rating, avg_confidence) VALUES `, 
-      reviewerStatsRows, 3000
-    );
+      return {
+        reviewer_id: rid,
+        review_count: stats.count,
+        avg_rating: avgRating,
+        rating_std: ratingStd,
+        avg_confidence: avgConfidence,
+        avg_text_length: avgTextLength,
+        question_ratio: questionRatio,
+        institution: personInstitutionMap[rid] || null
+      };
+    });
+
+    if (reviewerStatsRows.length > 0) {
+      console.log('  Inserting reviewer aggregates...');
+      const reviewersTableRows = reviewerStatsRows.map(row => [
+        row.reviewer_id,
+        row.review_count,
+        row.avg_rating,
+        row.avg_confidence
+      ]);
+
+      await batchInsert(client,
+        `INSERT INTO reviewers (reviewer_id, reviews, avg_rating, avg_confidence) VALUES `,
+        reviewersTableRows, 3000
+      );
+
+      const reviewerStatisticsRows = reviewerStatsRows.map(row => [
+        row.reviewer_id,
+        row.review_count,
+        row.avg_rating,
+        row.rating_std,
+        row.avg_confidence,
+        row.avg_text_length,
+        row.question_ratio,
+        row.institution ? JSON.stringify(row.institution) : null
+      ]);
+
+      await batchInsert(client,
+        `INSERT INTO reviewer_statistics (reviewer_id, review_count, avg_rating, rating_std, avg_confidence, avg_text_length, question_ratio, institution) VALUES `,
+        reviewerStatisticsRows,
+        3000
+      );
+    }
 
     console.log('🎉 Migration completed successfully!');
 

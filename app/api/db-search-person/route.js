@@ -129,21 +129,31 @@ export async function GET(request) {
       let institutionInfo = null;
       if (person.institution) {
         try {
-          // Try to parse as JSON first
-          if (person.institution.startsWith('{')) {
-            institutionInfo = JSON.parse(person.institution);
+          const rawInstitution = typeof person.institution === 'string'
+            ? person.institution
+            : JSON.stringify(person.institution);
+
+          if (rawInstitution.trim().startsWith('{') || rawInstitution.trim().startsWith('[')) {
+            const parsed = JSON.parse(rawInstitution);
+            const institutionObj = Array.isArray(parsed) ? parsed[0] : parsed;
+
+            institutionInfo = {
+              name: institutionObj?.name || rawInstitution,
+              country: institutionObj?.country || person.nationality || 'Unknown',
+              type: institutionObj?.type || institutionObj?.institution_type || 'Unknown'
+            };
           } else {
             institutionInfo = {
-              name: person.institution,
+              name: rawInstitution,
               country: person.nationality || 'Unknown',
-              type: person.institution_type || 'Unknown'
+              type: 'Unknown'
             };
           }
         } catch (e) {
           institutionInfo = {
-            name: person.institution,
+            name: typeof person.institution === 'string' ? person.institution : String(person.institution),
             country: person.nationality || 'Unknown',
-            type: person.institution_type || 'Unknown'
+            type: 'Unknown'
           };
         }
       }
