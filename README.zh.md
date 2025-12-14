@@ -118,9 +118,9 @@
    npm run init-db
    ```
 
-5. **导入数据**（如果有 ICLR 评审数据）
+5. **导入数据**（使用补充脚本生成的 JSON 数据）
    ```bash
-   npm run migrate-json
+   npm run migrate-json-final
    ```
 
 6. **启动开发服务器**

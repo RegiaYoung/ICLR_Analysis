@@ -10,8 +10,6 @@
     "test-db": "node test-db-connection.js",
     "diagnose-neon": "node diagnose-neon.js",
     "fix-neon": "node fix-neon-connection.js",
-    "migrate-json": "node scripts/migrate-json-to-db.js",
-    "migrate-json-fast": "node scripts/migrate-json-to-db-optimized.js",
     "migrate-json-final": "node scripts/migrate-json-final.cjs"
   },
   "dependencies": {
