@@ -239,8 +239,7 @@ function buildInstitutionStats(peopleData, institutionsData, reviewsData) {
       avg_confidence: inst.confidences.length ? Number(mean(inst.confidences).toFixed(2)) : 0,
       unique_submissions: inst.submissions.size,
     }))
-    .sort((a, b) => b.unique_submissions - a.unique_submissions || b.total_members - a.total_members)
-    .slice(0, INSTITUTION_LIMIT);
+    .sort((a, b) => b.unique_submissions - a.unique_submissions || b.total_members - a.total_members);
 
   const countryAgg = {};
   institutions.forEach((inst) => {
@@ -352,6 +351,8 @@ function buildStats(peopleData, institutionsData, reviewsData, reviewerList, sub
     ? Math.round(mean(reviewerList.map((r) => r.avg_text_length || 0)) || 0)
     : 0;
 
+  const reviewerDenominator = reviewerList.length || reviewersFromPeople;
+
   const countryAgg = {};
   instStats.forEach((inst) => {
     const c = inst.country || 'Unknown';
@@ -387,6 +388,7 @@ function buildStats(peopleData, institutionsData, reviewsData, reviewerList, sub
           (c.institution_count || 0) * 0.25
         ).toFixed(1)
       ),
+      reviewer_ratio: reviewerDenominator ? Number((c.reviewer_count / reviewerDenominator).toFixed(4)) : 0,
     }))
     .sort((a, b) => b.total_institutions - a.total_institutions)
     .slice(0, 50);
