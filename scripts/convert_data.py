@@ -40,9 +40,12 @@ COUNTRY_CODE_MAP = {
     "U.S": "United States",
     "U.S.": "United States",
     "UK": "United Kingdom",
+    "GB": "United Kingdom",
+    "GBR": "United Kingdom",
     "CN": "China",
     "CHN": "China",
     "HK": "China",  # 香港视作中国的一部分
+    "MO": "China",  # 澳门视作中国的一部分
     "KR": "South Korea",
     "DE": "Germany",
     "FR": "France",
@@ -73,6 +76,8 @@ def normalize_country(country: str) -> str:
     if upper in COUNTRY_CODE_MAP:
         return COUNTRY_CODE_MAP[upper]
     if upper in ("HONG KONG", "HONG KONG SAR"):
+        return "China"
+    if upper in ("MACAU", "MACAO", "MACAU SAR"):
         return "China"
     return c
 

@@ -48,6 +48,23 @@ const median = (arr) => {
 };
 const wordCount = (text) => (text ? text.trim().split(/\s+/).filter(Boolean).length : 0);
 
+function computeQualityScores(reviewer) {
+  const consistency_score = reviewer.rating_std
+    ? Number((100 - Math.min(30, reviewer.rating_std * 15)).toFixed(1))
+    : 100;
+  const engagement_score = Math.min(
+    100,
+    Math.round(((reviewer.avg_text_length || 0) / 30) + (reviewer.review_count || 0) * 3)
+  );
+  const experience_score = Math.min(100, (reviewer.review_count || 0) * 5);
+  const confidence_score = Math.min(100, (reviewer.avg_confidence || 0) * 20);
+  const overall_quality_score = Number(
+    ((consistency_score + engagement_score + experience_score + confidence_score) / 4).toFixed(1)
+  );
+
+  return { consistency_score, engagement_score, experience_score, confidence_score, overall_quality_score };
+}
+
 function loadInputs() {
   const people = safeReadJSON(path.join(INPUT_DIR, 'people.json'));
   const institutions = safeReadJSON(path.join(INPUT_DIR, 'institutions.json'));
@@ -444,10 +461,8 @@ function buildQualityAnalysis(submissionStats, reviewerList) {
   const top_quality_reviewers = reviewerList
     .filter((r) => r.review_count >= 3)
     .map((r) => {
-      const consistency_score = r.rating_std ? Number((100 - Math.min(30, r.rating_std * 15)).toFixed(1)) : 100;
-      const engagement_score = Math.min(100, Math.round((r.avg_text_length || 0) / 30 + r.review_count * 3));
-      const experience_score = Math.min(100, r.review_count * 5);
-      const confidence_score = Math.min(100, (r.avg_confidence || 0) * 20);
+      const { consistency_score, engagement_score, experience_score, confidence_score, overall_quality_score } =
+        computeQualityScores(r);
       return {
         reviewer_id: r.reviewer_id,
         reviewer_types: [r.review_count > 10 ? 'experienced' : 'active'],
@@ -461,7 +476,7 @@ function buildQualityAnalysis(submissionStats, reviewerList) {
         engagement_score,
         experience_score,
         confidence_score,
-        overall_quality_score: Number(((consistency_score + engagement_score + experience_score + confidence_score) / 4).toFixed(1)),
+        overall_quality_score,
       };
     })
     .sort((a, b) => b.overall_quality_score - a.overall_quality_score)
@@ -476,6 +491,7 @@ function buildQualityAnalysis(submissionStats, reviewerList) {
       review_count: s.review_count,
       avg_rating: s.avg_rating,
       rating_std: s.rating_std,
+      rating_variance: (s.rating_std || 0) ** 2,
       rating_range: s.rating_range || 0,
       avg_confidence: s.avg_confidence,
       quality_indicators: {
@@ -490,11 +506,17 @@ function buildQualityAnalysis(submissionStats, reviewerList) {
     .sort((a, b) => (b.rating_std || 0) - (a.rating_std || 0))
     .slice(0, 200);
 
-  const quality_distribution = {
-    high_quality_reviewers: reviewerList.filter((r) => (r.rating_std || 0) < 1).length,
-    medium_quality_reviewers: reviewerList.filter((r) => (r.rating_std || 0) >= 1 && (r.rating_std || 0) < 2).length,
-    improvement_needed_reviewers: reviewerList.filter((r) => (r.rating_std || 0) >= 2).length,
-  };
+  const quality_distribution = reviewerList.reduce(
+    (acc, reviewer) => {
+      const { overall_quality_score } = computeQualityScores(reviewer);
+      if ((reviewer.review_count || 0) < 3) return acc;
+      if (overall_quality_score >= 80) acc.high_quality_reviewers += 1;
+      else if (overall_quality_score >= 60) acc.medium_quality_reviewers += 1;
+      else acc.improvement_needed_reviewers += 1;
+      return acc;
+    },
+    { high_quality_reviewers: 0, medium_quality_reviewers: 0, improvement_needed_reviewers: 0 }
+  );
 
   return {
     coverage_analysis: {
@@ -512,7 +534,7 @@ function buildQualityAnalysis(submissionStats, reviewerList) {
       reviewer_diversity: {
         total_unique_reviewers: reviewerList.length,
         active_reviewers: reviewerList.filter((r) => r.review_count >= 3).length,
-        expert_reviewers: reviewerList.filter((r) => r.review_count >= 10).length,
+        expert_reviewers: reviewerList.filter((r) => r.review_count >= 5).length,
       },
       quality_distribution,
       review_consistency: {
@@ -534,13 +556,19 @@ function buildQualityAnalysis(submissionStats, reviewerList) {
 
 function buildReviewerAnalysis(reviewerList) {
   const filtered = reviewerList.filter((r) => r.review_count >= 3);
+  const mapCategory = (arr) =>
+    arr.map((r) => ({
+      ...r,
+      min_rating: r.rating_min ?? r.min_rating ?? null,
+      max_rating: r.rating_max ?? r.max_rating ?? null,
+    }));
   return {
     reviewer_categories: {
-      most_lenient: [...filtered].sort((a, b) => (b.avg_rating || 0) - (a.avg_rating || 0)).slice(0, 50),
-      most_strict: [...filtered].sort((a, b) => (a.avg_rating || 0) - (b.avg_rating || 0)).slice(0, 50),
-      most_volatile: [...filtered].sort((a, b) => (b.rating_std || 0) - (a.rating_std || 0)).slice(0, 50),
-      most_stable: [...filtered].sort((a, b) => (a.rating_std || 0) - (b.rating_std || 0)).slice(0, 50),
-      most_engaged: [...reviewerList].sort((a, b) => (b.review_count || 0) - (a.review_count || 0)).slice(0, 50),
+      most_lenient: mapCategory([...filtered].sort((a, b) => (b.avg_rating || 0) - (a.avg_rating || 0)).slice(0, 50)),
+      most_strict: mapCategory([...filtered].sort((a, b) => (a.avg_rating || 0) - (b.avg_rating || 0)).slice(0, 50)),
+      most_volatile: mapCategory([...filtered].sort((a, b) => (b.rating_std || 0) - (a.rating_std || 0)).slice(0, 50)),
+      most_stable: mapCategory([...filtered].sort((a, b) => (a.rating_std || 0) - (b.rating_std || 0)).slice(0, 50)),
+      most_engaged: mapCategory([...reviewerList].sort((a, b) => (b.review_count || 0) - (a.review_count || 0)).slice(0, 50)),
     },
     summary_statistics: {
       total_reviewers_analyzed: filtered.length,
@@ -623,6 +651,13 @@ function buildInstitutionAnalysis(instData) {
     institution_type_analysis: instData.institution_type_analysis,
     country_academic_power: instData.country_academic_power.slice(0, 50),
     institution_strictness: institution_strictness.slice(0, 50),
+    summary_stats: {
+      total_institutions: influence.length,
+      total_countries: instData.country_academic_power.length,
+      avg_members_per_institution: influence.length
+        ? Math.round(influence.reduce((s, i) => s + (i.total_members || 0), 0) / influence.length)
+        : 0,
+    },
     metadata: {
       total_institutions_analyzed: influence.length,
       total_countries: instData.country_academic_power.length,
@@ -654,7 +689,8 @@ function buildConflictAnalysis(reviewsData, peopleData) {
     (sub.reviews || []).forEach((rev) => {
       const rid = rev.reviewer_id;
       if (!rid) return;
-      const revInst = getPersonInst(rid).name;
+      const revInfo = getPersonInst(rid);
+      const revInst = revInfo.name;
       const sameAuthor = authors.includes(rid);
       const instConflict = revInst && authorInsts.has(revInst);
       if (sameAuthor || instConflict) {
@@ -664,7 +700,18 @@ function buildConflictAnalysis(reviewsData, peopleData) {
           conflict_type: sameAuthor ? 'author_is_reviewer' : 'same_institution',
         });
         const key = revInst || 'Unknown';
-        const agg = institutionMap.get(key) || { institution_name: key, country: 'Unknown', institution_type: 'Unknown', total_conflicts: 0, submissions: new Set(), reviewers: new Set() };
+        const agg =
+          institutionMap.get(key) ||
+          {
+            institution_name: key,
+            country: revInfo.country || 'Unknown',
+            institution_type: revInfo.type || 'Unknown',
+            total_conflicts: 0,
+            submissions: new Set(),
+            reviewers: new Set(),
+          };
+        if (agg.country === 'Unknown' && revInfo.country) agg.country = revInfo.country;
+        if (agg.institution_type === 'Unknown' && revInfo.type) agg.institution_type = revInfo.type;
         agg.total_conflicts += 1;
         agg.submissions.add(subNum);
         agg.reviewers.add(rid);
