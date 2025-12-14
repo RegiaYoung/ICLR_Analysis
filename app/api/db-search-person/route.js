@@ -35,7 +35,7 @@ export async function GET(request) {
         gender,
         role
       FROM people
-      WHERE 
+      WHERE
         LOWER(person_id) LIKE LOWER($1)
         OR LOWER(name) LIKE LOWER($1)
         OR LOWER(REPLACE(REPLACE(person_id, '~', ''), '_', ' ')) LIKE LOWER($1)
@@ -156,6 +156,16 @@ export async function GET(request) {
             type: 'Unknown'
           };
         }
+      }
+
+      // Apply explicit institution_type column when available
+      if (person.institution_type && (!institutionInfo || !institutionInfo.type || institutionInfo.type === 'Unknown')) {
+        institutionInfo = {
+          ...(institutionInfo || {}),
+          name: institutionInfo?.name || (typeof person.institution === 'string' ? person.institution : ''),
+          country: institutionInfo?.country || person.nationality || 'Unknown',
+          type: person.institution_type
+        };
       }
 
       // Parse reviewer_stats JSON if it exists
@@ -304,6 +314,7 @@ export async function GET(request) {
         gender: person.gender || 'Unknown',
         role: person.role || 'Unknown',
         institution: institutionInfo,
+        institution_type: institutionInfo?.type || person.institution_type || 'Unknown',
         institutions: person.institution ? [person.institution] : [],
         reviewer_stats: reviewerStats || parsedReviewerStats,
         total_papers: parseInt(person.total_papers || authoredSubmissions.length || 0),
