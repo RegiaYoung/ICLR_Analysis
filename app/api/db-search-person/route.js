@@ -31,6 +31,7 @@ export async function GET(request) {
         name,
         nationality,
         institution,
+        institution_type,
         gender,
         role
       FROM people
