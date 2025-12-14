@@ -6,7 +6,7 @@ export default function StatsCards({ stats, lang = 'en' }) {
   const translations = {
     en: {
       totalReviews: 'Total Reviews',
-      totalPeople: 'Total People',
+      totalPeople: 'Total Reviewers',
       institutions: 'Institutions',
       submissions: 'Submissions',
       avgRating: 'Avg Rating',
@@ -14,7 +14,7 @@ export default function StatsCards({ stats, lang = 'en' }) {
     },
     zh: {
       totalReviews: '总评审数',
-      totalPeople: '总人数',
+      totalPeople: '总审稿人数',
       institutions: '机构数',
       submissions: '投稿数',
       avgRating: '平均评分',
