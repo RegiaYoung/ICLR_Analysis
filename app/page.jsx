@@ -1522,12 +1522,12 @@ export default function Home() {
                                   return person.institution.type;
                                 } else {
                                   try {
-                                    const inst = typeof person.institution === 'string' && person.institution.startsWith('{') 
-                                      ? JSON.parse(person.institution) 
+                                    const inst = typeof person.institution === 'string' && person.institution.startsWith('{')
+                                      ? JSON.parse(person.institution)
                                       : person.institution;
-                                    return formatValue(inst && inst.type);
+                                    return formatValue(inst && inst.type) || 'Unknown';
                                   } catch {
-                                    return '';
+                                    return 'Unknown';
                                   }
                                 }
                               })()}

@@ -26,14 +26,15 @@ export async function GET(request) {
     // Search for people by name or person_id (case insensitive, fuzzy matching)
     // Only select columns that are guaranteed to exist in the current schema
     const people = await client.query(`
-      SELECT 
+      SELECT
         person_id,
         name,
         nationality,
         institution,
+        institution_type,
         gender,
         role
-      FROM people 
+      FROM people
       WHERE 
         LOWER(person_id) LIKE LOWER($1)
         OR LOWER(name) LIKE LOWER($1)
@@ -56,8 +57,39 @@ export async function GET(request) {
       // Get detailed reviewer statistics from reviewers table
       let reviewerStats = null;
       try {
+        const reviewerStatisticsQuery = await client.query(`
+          SELECT
+            review_count,
+            avg_rating,
+            rating_std,
+            avg_confidence,
+            avg_text_length,
+            question_ratio,
+            institution
+          FROM reviewer_statistics
+          WHERE reviewer_id = $1
+        `, [person.person_id]);
+
+        if (reviewerStatisticsQuery.rows.length > 0) {
+          const stats = reviewerStatisticsQuery.rows[0];
+          reviewerStats = {
+            review_count: parseInt(stats.review_count || 0),
+            avg_rating: parseFloat(Number(stats.avg_rating || 0).toFixed(2)),
+            rating_std: parseFloat(Number(stats.rating_std || 0).toFixed(3)),
+            avg_confidence: parseFloat(Number(stats.avg_confidence || 0).toFixed(2)),
+            avg_text_length: parseInt(stats.avg_text_length || 0),
+            question_ratio: parseFloat(Number(stats.question_ratio || 0).toFixed(3)),
+            institution: stats.institution
+          };
+        }
+      } catch (err) {
+        console.warn('Could not get reviewer stats from reviewer_statistics table:', err.message);
+      }
+
+      // If not found in reviewer_statistics, fall back to reviewers table
+      try {
         const reviewerQuery = await client.query(`
-          SELECT 
+          SELECT
             reviews,
             avg_rating,
             median_rating,
@@ -110,7 +142,7 @@ export async function GET(request) {
         } catch (e) {
           institutionInfo = {
             name: person.institution,
-            country: person.nationality || 'Unknown', 
+            country: person.nationality || 'Unknown',
             type: person.institution_type || 'Unknown'
           };
         }
