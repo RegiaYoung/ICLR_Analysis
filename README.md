@@ -84,7 +84,6 @@ A comprehensive platform for analyzing peer review data from the International C
 - **Institutional Insights**: Explore geographical distribution and institutional influence
 - **Quality Metrics**: Comprehensive quality analysis of reviews and submissions
 - **Interactive Visualizations**: Rich charts and graphs for data exploration
-- **Community Features**: Discussion board for research community
 - **Statistical Analysis**: Advanced statistical tools for review data
 
 ## 📊 Data Analysis Capabilities
@@ -99,7 +98,6 @@ A comprehensive platform for analyzing peer review data from the International C
 ## 🛠️ Tech Stack
 
 - **Frontend**: Next.js 14, React 18, Tailwind CSS
-- **Authentication**: Better Auth with Google/GitHub OAuth
 - **Database**: PostgreSQL with connection pooling
 - **Charts**: Chart.js with React Chart.js 2
 - **UI Components**: Radix UI primitives
@@ -216,6 +214,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - ICLR conference organizers for providing review data
 - OpenReview platform for transparency in peer review
 - Research community for valuable feedback
+- Prototype from `fox291/ICLR_Analysis`, we have fixed bugs and improved various functionalities, providing complete details on data processing and analysis.
+
 
 ## 🔒 Privacy & Ethics
 
