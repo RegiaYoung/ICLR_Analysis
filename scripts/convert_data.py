@@ -33,6 +33,64 @@ COMPANY_KEYWORDS = [
     "intel", "qualcomm", "tesla", "telecom"
 ]
 
+# 国家缩写与常见别名映射到国家全称
+COUNTRY_CODE_MAP = {
+    "US": "United States",
+    "USA": "United States",
+    "U.S": "United States",
+    "U.S.": "United States",
+    "UK": "United Kingdom",
+    "GB": "United Kingdom",
+    "GBR": "United Kingdom",
+    "CN": "China",
+    "CHN": "China",
+    "HK": "China",  # 香港视作中国的一部分
+    "MO": "China",  # 澳门视作中国的一部分
+    "KR": "South Korea",
+    "DE": "Germany",
+    "FR": "France",
+    "CA": "Canada",
+    "SG": "Singapore",
+    "AU": "Australia",
+    "JP": "Japan",
+    "IN": "India",
+    "ES": "Spain",
+    "SE": "Sweden",
+    "NL": "Netherlands",
+    "BR": "Brazil",
+    "CH": "Switzerland",
+}
+
+# 特定机构的国家矫正（无视成员的国家信息）
+INSTITUTION_COUNTRY_OVERRIDES = {
+    "bytedance": "China",
+    "harbin institute of technology": "China",
+}
+
+
+def normalize_country(country: str) -> str:
+    if not country:
+        return "Unknown"
+    c = country.strip()
+    upper = c.upper()
+    if upper in COUNTRY_CODE_MAP:
+        return COUNTRY_CODE_MAP[upper]
+    if upper in ("HONG KONG", "HONG KONG SAR"):
+        return "China"
+    if upper in ("MACAU", "MACAO", "MACAU SAR"):
+        return "China"
+    return c
+
+
+def infer_country_for_institution(name: str, fallback_country: str) -> str:
+    if not name:
+        return fallback_country or "Unknown"
+    lower_name = name.lower()
+    for key, mapped in INSTITUTION_COUNTRY_OVERRIDES.items():
+        if key in lower_name:
+            return mapped
+    return fallback_country or "Unknown"
+
 def infer_institution_type(name: str) -> str:
     """基于机构名粗略推断类型：University / Company / Other."""
     if not name:
@@ -54,7 +112,7 @@ def process_person(person_obj, role):
     # 获取机构名称 & 国家
     inst_name = person_obj.get('institution') or 'Unknown Institution'
     country = person_obj.get('country')
-    country_val = country if country else 'Unknown'
+    country_val = normalize_country(country)
 
     # 1. 更新人员信息 (People Output)
     if pid not in people_output['people']:
@@ -89,17 +147,18 @@ def process_person(person_obj, role):
 
     # 2. 更新机构信息 (Institutions Map) - 修复了“先入为主”导致没有国家的问题
     if inst_name and inst_name != 'Unknown Institution':
+        inferred_country = infer_country_for_institution(inst_name, country_val)
         if inst_name not in institutions_map:
             # 新增机构
             institutions_map[inst_name] = {
                 "institution_name": inst_name,
-                "country": country_val,
+                "country": inferred_country,
                 "institution_type": infer_institution_type(inst_name)
             }
         else:
             # 如果已有机构的国家是 Unknown，但当前数据有国家，则更新
-            if institutions_map[inst_name]['country'] == 'Unknown' and country_val != 'Unknown':
-                institutions_map[inst_name]['country'] = country_val
+            if institutions_map[inst_name]['country'] == 'Unknown' and inferred_country != 'Unknown':
+                institutions_map[inst_name]['country'] = inferred_country
 
 total_reviews_count = 0
 

@@ -532,7 +532,7 @@ export default function Home() {
                     <div className="section-title">{lang === 'zh' ? '高质量审稿人' : 'High Quality Reviewers'}</div>
                     <div className="stat">
                       <div className="value">{fmtInt(qualityAnalysis.system_health_metrics?.quality_distribution?.high_quality_reviewers)}</div>
-                      <div className="hint">{lang === 'zh' ? '评分80+的审稿人' : 'Reviewers with 80+ score'}</div>
+                      <div className="hint">{lang === 'zh' ? '综合质量80+的审稿人' : 'Reviewers with quality score ≥ 80'}</div>
                     </div>
                   </div>
                   <div className="card">
@@ -546,7 +546,7 @@ export default function Home() {
                     <div className="section-title">{lang === 'zh' ? '专家审稿人' : 'Expert Reviewers'}</div>
                     <div className="stat">
                       <div className="value">{fmtInt(qualityAnalysis.system_health_metrics?.reviewer_diversity?.expert_reviewers)}</div>
-                      <div className="hint">{lang === 'zh' ? '10+评审的资深专家' : 'Senior experts with 10+ reviews'}</div>
+                      <div className="hint">{lang === 'zh' ? '5+评审的资深专家' : 'Senior experts with 5+ reviews'}</div>
                     </div>
                   </div>
                 </div>
@@ -932,7 +932,7 @@ export default function Home() {
                     <div className="section-title">{lang === 'zh' ? '高质量审稿人' : 'High Quality Reviewers'}</div>
                     <div className="stat">
                       <div className="value">{fmtInt(qualityAnalysis.system_health_metrics?.quality_distribution?.high_quality_reviewers)}</div>
-                      <div className="hint">{lang === 'zh' ? '评分80+的审稿人' : 'Reviewers with 80+ score'}</div>
+                      <div className="hint">{lang === 'zh' ? '综合质量80+的审稿人' : 'Reviewers with quality score ≥ 80'}</div>
                     </div>
                   </div>
                   <div className="card">
@@ -946,7 +946,7 @@ export default function Home() {
                     <div className="section-title">{lang === 'zh' ? '专家审稿人' : 'Expert Reviewers'}</div>
                     <div className="stat">
                       <div className="value">{fmtInt(qualityAnalysis.system_health_metrics?.reviewer_diversity?.expert_reviewers)}</div>
-                      <div className="hint">{lang === 'zh' ? '10+评审的资深专家' : 'Senior experts with 10+ reviews'}</div>
+                      <div className="hint">{lang === 'zh' ? '5+评审的资深专家' : 'Senior experts with 5+ reviews'}</div>
                     </div>
                   </div>
                 </div>
