@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![在线演示](https://img.shields.io/badge/🌐_在线演示-openreview.online-blue?style=for-the-badge&logo=globe&logoColor=white)
+![在线演示](https://img.shields.io/badge/🌐_在线演示-http://10.123.4.17:3000/-blue?style=for-the-badge&logo=globe&logoColor=white)
 ![版本](https://img.shields.io/badge/版本-1.0.0-green?style=for-the-badge)
 ![许可证](https://img.shields.io/badge/许可证-MIT-yellow?style=for-the-badge)
 
@@ -14,7 +14,7 @@
 
 ## 🌐 在线演示
 
-**访问地址**: [openreview.online](https://openreview.online)
+**访问地址**: [http://10.123.4.17:3000/](http://10.123.4.17:3000/)
 
 ## 📸 功能展示
 
@@ -91,14 +91,12 @@
 
 - Node.js 18+ 和 npm/yarn
 - PostgreSQL 数据库
-- Google OAuth 凭证（可选）
-- GitHub OAuth 凭证（可选）
 
 ## 🔧 安装步骤
 
 1. **克隆代码库**
    ```bash
-   git clone https://github.com/fox291/ICLR_Analysis.git
+   git clone https://github.com/RegiaYoung/ICLR_Analysis.git
    cd ICLR_Analysis
    ```
 
@@ -113,7 +111,6 @@
    ```
    编辑 `.env.local` 文件配置：
    - 数据库连接字符串
-   - OAuth 凭证（可选）
    - Better Auth 密钥
 
 4. **设置数据库**
@@ -153,8 +150,6 @@
 |--------|------|------|
 | `DATABASE_URL` | PostgreSQL 连接字符串 | 是 |
 | `BETTER_AUTH_SECRET` | 身份验证密钥 | 是 |
-| `GOOGLE_CLIENT_ID_*` | Google OAuth 凭证 | 否 |
-| `GITHUB_CLIENT_ID_*` | GitHub OAuth 凭证 | 否 |
 | `NEXT_PUBLIC_APP_URL` | 应用 URL | 否 |
 
 ## 📊 数据模式
