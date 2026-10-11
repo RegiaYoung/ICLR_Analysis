@@ -1,8 +1,13 @@
 import { NextResponse } from 'next/server';
 import { Pool } from 'pg';
 
+const connectionString = process.env.DATABASE_URL;
+if (!connectionString || !connectionString.trim()) {
+  throw new Error('DATABASE_URL must be set before connecting to the database');
+}
+
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL || 'postgresql://neondb_owner:npg_VMzu14dfSmNI@ep-plain-sound-ad6539zf-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require',
+  connectionString,
   connectionTimeoutMillis: 10000,
   max: 5,
 });
